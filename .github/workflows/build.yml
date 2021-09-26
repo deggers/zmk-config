@@ -62,7 +62,7 @@ jobs:
           path: corne_right_nice_nano_v2.uf2
 #     SWEEP LEFT
       - name: West Build (Cradio/Sweep Left)
-        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Cradio/Sweep DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano_v2.dts.pre.tmp
