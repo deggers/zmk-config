@@ -48,9 +48,9 @@ jobs:
         with:
           name: firmware
           path: corne_left_nice_nano_v2.uf2
-      - name: West Build (Corne Right)
-        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=corne_right -DCONFIG_ZMK_KEYBOARD_NAME='"FIFI"' -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 #     FIFI RIGHT
+      - name: West Build (Corne Right)
+        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=corne_right -DCONFIG_ZMK_KEYBOARD_NAME='"FIFI"' -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Corne Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
@@ -62,7 +62,7 @@ jobs:
           path: corne_right_nice_nano_v2.uf2
 #     SWEEP LEFT
       - name: West Build (Cradio/Sweep Left)
-        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_left -DCONFIG_ZMK_KEYBOARD_NAME='"Sweep"' -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Cradio/Sweep DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano_v2.dts.pre.tmp
@@ -75,9 +75,9 @@ jobs:
         with:
           name: firmware
           path: cradio_left_nice_nano_v2.uf2
-      - name: West Build (Cradio/Sweep Right)
-        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 #     SWEEP RIGHT
+      - name: West Build (Cradio/Sweep Right)
+        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_right -DCONFIG_ZMK_KEYBOARD_NAME='"Sweep"' -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Cradio/Sweep Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
