@@ -17,10 +17,10 @@
 
                 base_layer {
                         bindings = <
-   &kp J  &kp K  &kp M  &kp F  &kp V           &kp QMARK  &kp DOT  &kp COMMA  &kp APOS  &kp SQT
-   &kp R  &kp S  &kp N  &kp T  &kp P           &kp Z      &kp A    &kp U  &kp O     &kp I
-   &kp X  &kp G  &kp L  &kp D  &kp B           &kp MINUS  &kp W    &kp H  &kp C     &kp Y
-        &out OUT_BLE &kp ESC &kp SPACE       &kp E      &kp BSPC  &kp DEL
+  &none &kp J  &kp K  &kp M  &kp F  &kp V           &kp QMARK  &kp DOT  &kp COMMA  &kp APOS  &kp SQT &none
+  &none &kp R  &kp S  &kp N  &kp T  &kp P           &kp Z      &kp A    &kp U  &kp O     &kp I &none
+  &none &kp X  &kp G  &kp L  &kp D  &kp B           &kp MINUS  &kp W    &kp H  &kp C     &kp Y &none
+        &out OUT_BLE &kp ESC &kp SPACE               &kp E      &kp BSPC  &kp DEL
                         >;
                 };
         };
