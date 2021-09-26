@@ -38,7 +38,7 @@ jobs:
         run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=fifi_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Fifi DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/nice_nano.dts.pre.tmp
+        run: cat -n build/zephyr/nice_nano_v2.dts.pre.tmp
       - name: Fifi Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
