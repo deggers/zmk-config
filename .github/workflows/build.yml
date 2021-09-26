@@ -35,7 +35,7 @@ jobs:
         run: west zephyr-export
 #     FIFI LEFT
       - name: West Build (Corne Left)
-        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=corne_left -DCONFIG_ZMK_KEYBOARD_NAME='"Fifi"' -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=corne_left -DCONFIG_ZMK_KEYBOARD_NAME='"Fifi"' -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Corne DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano_v2.dts.pre.tmp
@@ -50,7 +50,7 @@ jobs:
           path: corne_left_nice_nano_v2.uf2
 #     FIFI RIGHT
       - name: West Build (Corne Right)
-        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=corne_right  -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=corne_right  -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Corne Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
