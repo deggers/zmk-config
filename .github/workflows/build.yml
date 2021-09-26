@@ -33,33 +33,33 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-#       FIFI LEFT
-      - name: West Build (Fifi Left)
-        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=fifi_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Fifi DTS File
+#     FIFI LEFT
+      - name: West Build (Corne Left)
+        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=corne_left -DCONFIG_ZMK_KEYBOARD_NAME='"FIFI"' -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Corne DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano_v2.dts.pre.tmp
-      - name: Fifi Left Kconfig file
+      - name: Corne Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 fifi_left_nice_nano.uf2
-      - name: Archive (Fifi Left)
+        run: cp build/zephyr/zmk.uf2 corne_left_nice_nano_v2.uf2
+      - name: Archive (Corne Left)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: fifi_left_nice_nano.uf2
+          path: corne_left_nice_nano_v2.uf2
+      - name: West Build (Corne Right)
+        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=corne_right -DCONFIG_ZMK_KEYBOARD_NAME='"FIFI"' -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 #     FIFI RIGHT
-      - name: West Build (Fifi Right)
-        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=fifi_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Fifi Right Kconfig file
+      - name: Corne Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 fifi_right_nice_nano.uf2
-      - name: Archive (Fifi Right)
+        run: cp build/zephyr/zmk.uf2 corne_right_nice_nano_v2.uf2
+      - name: Archive (Corne Right)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: fifi_right_nice_nano.uf2
+          path: corne_right_nice_nano_v2.uf2
 #     SWEEP LEFT
       - name: West Build (Cradio/Sweep Left)
         run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
