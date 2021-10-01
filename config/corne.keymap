@@ -9,7 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define BASE 0
+#define BAS_L 0
+#define BLE_L 1
 
 / {
 
@@ -32,7 +33,16 @@
   &none &kp J      &kp K       &kp M         &kp F        &kp V           &kp QMARK  &kp DOT  &kp COMMA  &kp APOS  &kp SQT &none
   &none &hm LGUI R &hm LALT S  &hm LCTRL N   &hm LSHFT T  &kp P           &kp Z      &hm RSHFT A    &hm RCTRL U  &hm RALT O     &hm RGUI I &none
   &none &kp X      &kp G       &kp L         &kp D        &kp B           &kp MINUS  &kp W    &kp H  &kp C     &kp Y &none
-        &out OUT_BLE &kp ESC &kp SPACE               &kp E      &kp BSPC  &kp DEL
+                                      &none &lt BLE_L ESC &kp SPACE               &kp E      &kp BSPC  &none
+                        >;
+                };
+
+                ble_layer {
+                        bindings = <
+    &none &none &none &none &none &none     &out OUT_USB &out OUT_BLE &none        &none        &bt BT_CLR   &none
+    &none &none &none &none &none &none     &none        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none
+    &none &none &none &none &none &none     &none        &none        &none &none &none &none
+                      &none &none &none     &none &none &none
                         >;
                 };
         };
