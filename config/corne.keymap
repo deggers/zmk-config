@@ -30,8 +30,8 @@
 
                 base_layer {
                         bindings = <
-  &none &kp J      &kp K       &kp M         &kp F        &kp V           &kp QMARK  &kp DOT  &kp COMMA  &kp APOS  &kp SQT &none
-  &none &hm LGUI R &hm LALT S  &hm LCTRL N   &hm LSHFT T  &kp P           &kp Z      &hm RSHFT A    &hm RCTRL U  &hm RALT O     &hm RGUI I &none
+  &none &kp J      &kp K       &kp M         &kp F        &kp V           &kp QMARK  &kp DOT        &kp COMMA  &kp APOS  &kp SQT &none
+  &none &hm LGUI R &hm LALT S  &hm LCTRL N   &hm LSHFT T  &hm RALT P      &hm RALT Z &hm RSHFT A    &hm RCTRL U  &hm RALT O     &hm RGUI I &none
   &none &kp X      &kp G       &kp L         &kp D        &kp B           &kp MINUS  &kp W    &kp H  &kp C     &kp Y &none
                                       &none &lt BLE_L ESC &kp SPACE               &kp E      &kp BSPC  &none
                         >;
