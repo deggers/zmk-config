@@ -10,7 +10,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BAS_L 0
-#define BLE_L 1
+#define HDD_L 1
+#define BLE_L 2
 
 / {
 
@@ -51,6 +52,15 @@
     keymap {
        compatible = "zmk,keymap";
        base_layer {
+          bindings = <
+  &none &kp Y      &kp C       &kp K         &kp F        &kp J           &kp X  &kp W        &kp DOT  &kp U  &kp COMMA &none
+  &none &hm LGUI R &hm LALT S  &hm LCTRL T   &hm LSHFT H  &hm RALT P      &hm RALT M &hm RSHFT N    &hm RCTRL A  &hm RALT I     &hm RGUI O &none
+  &none &kp DQT      &kp V       &kp G         &kp D        &kp B       &kp QMARK  &kp L    &kp LPAR  &kp RPAR     &kp SEMI &none
+                                      &none &lt BLE_L ESC &kp SPACE               &kp E      &kp BSPC  &none
+                        >;
+                };
+
+       HDD_layer {
           bindings = <
   &none &kp J      &kp K       &kp M         &kp F        &kp V           &kp Q  &kp W        &kp H  &kp C  &kp Y &none
   &none &hm LGUI R &hm LALT S  &hm LCTRL N   &hm LSHFT T  &hm RALT P      &hm RALT Z &hm RSHFT A    &hm RCTRL U  &hm RALT O     &hm RGUI I &none
