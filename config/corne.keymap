@@ -9,21 +9,18 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define BAS_L 0
-#define BLE_L 1
+#define BASE_LAYER 0
+#define NAV_LAYER 1
+#define BLE_LAYER 2
 
 / {
-
-    chosen {
-          zmk,matrix_transform = &five_column_transform;
-    };
 
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods";
             #binding-cells = <2>;
-            tapping_term_ms = <400>;
+            tapping_term_ms = <300>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -33,20 +30,20 @@
         compatible = "zmk,combos";
 
         combo_esc {
-            timeout-ms = <150>;
-            key-positions = <0 1>;
+            timeout-ms = <50>;
+            key-positions = <15 16>;
             bindings = <&kp ESC>;
         };
 
         combo_tab {
-            timeout-ms = <150>;
-            key-positions = <1 2>;
+            timeout-ms = <50>;
+            key-positions = <14 15>;
             bindings = <&kp TAB>;
         };
 
         combo_enter {
-            timeout-ms = <150>;
-            key-positions = <9 10>;
+            timeout-ms = <50>;
+            key-positions = <20 11>;
             bindings = <&kp RET>;
         };
 
@@ -54,20 +51,30 @@
 
     keymap {
        compatible = "zmk,keymap";
-       BAS_L {
+       BASE_LAYER {
           bindings = <
-  &kp J      &kp K       &kp M         &kp F        &kp V           &kp Q  &kp W        &kp H  &kp C  &kp Y
-  &hm LGUI R &hm LALT S  &hm LCTRL N   &hm LSHFT T  &hm RALT P      &hm RALT Z &hm RSHFT A    &hm RCTRL U  &hm RALT O     &hm RGUI I
-  &kp X      &kp G       &kp L         &kp D        &kp B           &kp QMARK  &kp DOT    &kp COMMA  &kp APOS     &kp SQT
-                                      &none &lt BLE_L ESC &kp SPACE               &kp E      &kp BSPC  &none
+  &none &kp J      &kp K       &kp L         &kp D        &kp V           &kp Q  &kp W  &kp H  &kp C  &kp Y &none
+  &none &hm LGUI R &hm LALT S  &hm LCTRL N   &hm LSHFT T  &hm RALT P      &hm RALT Z &hm RSHFT A    &hm RCTRL U  &hm RALT O     &hm RGUI I &none
+  &none &kp X      &kp G       &kp M         &kp F        &kp B           &kp QMARK  &kp DOT    &kp COMMA  &kp APOS     &kp SQT &none
+                    &none &lt BLE_LAYER ESC &lt NAV_LAYER SPACE              &kp E      &kp BSPC &none
                         >;
                 };
 
-      BLE_L {
+
+       NAV_LAYER {
+          bindings = <
+  &none &none  &none  &none  &none  &none      &none    &none     &none   &none      &none &none
+  &none &none  &none  &none  &none  &none      &kp LEFT &kp DOWN  &kp UP  &kp RIGHT  &none &none
+  &none &none  &none  &none  &none  &none      &none    &none     &none   &none      &none &none
+                        &none &none      &none  &kp BSPC
+                        >;
+                };
+
+      BLE_LAYER {
          bindings = <
-    &reset &none &none &none &none     &out OUT_USB &out OUT_BLE  &none        &none        &bt BT_CLR
-    &none &none &none &none &none      &bt  BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-    &bootloader &none &none &none &none     &none        &none        &none &none &none
+  &none &reset &none &none &none &none          &out OUT_USB &out OUT_BLE &none        &none        &bt BT_CLR &none
+  &none &none &none &none &none &none           &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
+   &none &bootloader &none &none &none &none     &none        &none        &none         &none       &none &none
                       &none &none &none     &none &none &none
                         >;
                 };
