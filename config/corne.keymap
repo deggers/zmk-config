@@ -15,6 +15,10 @@
 
 / {
 
+    chosen {
+          zmk,matrix_transform = &five_column_transform;
+    };
+
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -24,7 +28,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
     };
 
     combos {
@@ -54,27 +57,18 @@
        compatible = "zmk,keymap";
        BASE_L {
           bindings = <
-  &none &kp Y      &kp C       &kp K         &kp F        &kp J           &kp X  &kp W        &kp DOT  &kp U  &kp COMMA &none
-  &none &hm LGUI R &hm LALT S  &hm LCTRL T   &hm LSHFT H  &hm RALT P      &hm RALT M &hm RSHFT N    &hm RCTRL A  &hm RALT I     &hm RGUI O &none
-  &none &kp DQT      &kp V       &kp G         &kp D        &kp B       &kp QMARK  &kp L    &kp LPAR  &kp RPAR     &kp SEMI &none
-                                      &none &lt BLE_L ESC &kp SPACE               &kp E      &kp BSPC  &none
-                        >;
-                };
-
-       HDD_L {
-          bindings = <
-  &none &kp J      &kp K       &kp M         &kp F        &kp V           &kp Q  &kp W        &kp H  &kp C  &kp Y &none
-  &none &hm LGUI R &hm LALT S  &hm LCTRL N   &hm LSHFT T  &hm RALT P      &hm RALT Z &hm RSHFT A    &hm RCTRL U  &hm RALT O     &hm RGUI I &none
-  &none &kp X      &kp G       &kp L         &kp D        &kp B           &kp QMARK  &kp DOT    &kp COMMA  &kp APOS     &kp SQT &none
+  &kp J      &kp K       &kp M         &kp F        &kp V           &kp Q  &kp W        &kp H  &kp C  &kp Y
+  &hm LGUI R &hm LALT S  &hm LCTRL N   &hm LSHFT T  &hm RALT P      &hm RALT Z &hm RSHFT A    &hm RCTRL U  &hm RALT O     &hm RGUI I
+  &kp X      &kp G       &kp L         &kp D        &kp B           &kp QMARK  &kp DOT    &kp COMMA  &kp APOS     &kp SQT
                                       &none &lt BLE_L ESC &kp SPACE               &kp E      &kp BSPC  &none
                         >;
                 };
 
       BLE_L {
          bindings = <
-    &none &reset &none &none &none &none     &out OUT_USB &out OUT_BLE  &none        &none        &bt BT_CLR   &none
-    &none &none &none &none &none &none      &bt  BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
-    &none &bootloader &none &none &none &none     &none        &none        &none &none &none    &none
+    &reset &none &none &none &none     &out OUT_USB &out OUT_BLE  &none        &none        &bt BT_CLR
+    &none &none &none &none &none      &bt  BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+    &bootloader &none &none &none &none     &none        &none        &none &none &none
                       &none &none &none     &none &none &none
                         >;
                 };
