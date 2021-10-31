@@ -54,9 +54,9 @@
        compatible = "zmk,keymap";
        BASE_LAYER {
           bindings = <
-  &none &kp J      &kp K       &kp L         &kp D        &kp V           &kp Q  &kp W  &kp H  &kp C  &kp Y &none
+  &none &none      &kp K       &kp L         &kp D        &kp COMMA           &kp Q  &kp W  &kp H  &kp C  &kp Y &none
   &none &hm LGUI R &hm LALT S  &hm LCTRL N   &hm LSHFT T  &hm RALT P      &hm RALT Z &hm RSHFT A    &hm RCTRL U  &hm RALT O     &hm RGUI I &none
-  &none &kp X      &kp G       &kp M         &kp F        &kp B           &kp QMARK  &kp DOT    &kp COMMA  &kp APOS     &kp SQT &none
+  &none &kp X      &kp G       &kp M         &kp F        &kp DOT           &kp QMARK  &kp V  &kp B  &kp J &kp SQT &none
                     &none &lt BLE_LAYER ESC &lt NAV_LAYER SPACE           &lt NUM_LAYER E  &kp BSPC &none
                         >;
                 };
