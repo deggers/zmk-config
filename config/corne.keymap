@@ -9,7 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define ___dusty_L1____       &none   &kp K    &kp L    &kp D    &kp COMMA
+#define ___dusty_L1___       &none      &kp K       &kp L        &kp D        &kp COMMA
+#define ___dusty_L2___       &hm LGUI R &hm LALT S  &hm LCTRL N  &hm LSHFT T  &hm RALT P
+#define ___dusty_L3___       &kp X      &kp G       &kp M        &kp F        &kp DOT
+#define ___dusty_L4___       &lt BLE_LAYER ESC &lt NAV_LAYER SPACE
+
+#define ___dusty_R1___       &kp Q      &kp W        &kp H        &kp C       &kp Y
+#define ___dusty_R2___       &hm RALT Z &hm LSHFT A  &hm LCTRL U  &hm LALT O  &hm LGUI I
+#define ___dusty_R3___       &kp QMARK  &kp V        &kp B        &kp J       &kp SQT
+#define ___dusty_R4___       &lt NUM_LAYER E  &kp BSPC
 
 #define BASE_LAYER 0
 #define NAV_LAYER 1
@@ -56,10 +64,10 @@
        compatible = "zmk,keymap";
        BASE_LAYER {
           bindings = <
-  &none ___dusty_L1____                                                   &kp Q  &kp W  &kp H  &kp C  &kp Y &none
-  &none &hm LGUI R &hm LALT S  &hm LCTRL N   &hm LSHFT T  &hm RALT P      &hm RALT Z &hm RSHFT A    &hm RCTRL U  &hm RALT O     &hm RGUI I &none
-  &none &kp X      &kp G       &kp M         &kp F        &kp DOT           &kp QMARK  &kp V  &kp B  &kp J &kp SQT &none
-                    &none &lt BLE_LAYER ESC &lt NAV_LAYER SPACE           &lt NUM_LAYER E  &kp BSPC &none
+                  &none ___dusty_L1___         ___dusty_R1___ &none
+                  &none ___dusty_L2___         ___dusty_R2___ &none
+                  &none ___dusty_L3___         ___dusty_R3___ &none
+                  &none ___dusty_L4___         ___dusty_R4___ &none
                         >;
                 };
 
