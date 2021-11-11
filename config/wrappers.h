@@ -16,4 +16,4 @@
 #define ___HDD_R1___    &kp MINUS      &kp DOT      &kp SQT      &kp DQT     &kp FSLH
 #define ___HDD_R2___    &hm RALT COMMA &hm LSHFT H  &hm LCTRL A  &hm LALT O  &hm LGUI I
 #define ___HDD_R3___    &kp Z          &kp F        &kp U        &kp K       &kp Y
-#define ___HDD_R4___    &lt NUM_LAYER SPC  &none
+#define ___HDD_R4___    &lt NUM_LAYER SPC  &kp BSPC
