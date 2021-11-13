@@ -32,18 +32,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_z {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp Z>;
-        };
-
-        combo_q {
-            timeout-ms = <50>;
-            key-positions = <4 5>;
-            bindings = <&kp Q>;
-        };
-
         combo_esc {
             timeout-ms = <50>;
             key-positions = <15 16>;
@@ -68,10 +56,10 @@
        compatible = "zmk,keymap";
        BASE_LAYER {
           bindings = <
-                  &none ___HDD_L1___         ___HDD_R1___ &none
-                  &none ___HDD_L2___         ___HDD_R2___ &none
-                  &none ___HDD_L3___         ___HDD_R3___ &none
-                  &none ___HDD_L4___         ___HDD_R4___ &none
+                  &none ___dusty_L1___         ___dusty_R1___ &none
+                  &none ___dusty_L2___         ___dusty_R2___ &none
+                  &none ___dusty_L3___         ___dusty_R3___ &none
+                  &none ___dusty_L4___         ___dusty_R4___ &none
                         >;
                 };
 
