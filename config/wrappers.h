@@ -17,3 +17,9 @@
 #define ___HDD_R2___    &hm RALT COMMA   &hm LSHFT H  &hm LCTRL A  &hm LALT O  &hm LGUI I
 #define ___HDD_R3___    &kp Z            &kp F        &kp U        &kp K       &kp Y
 #define ___HDD_R4___    &lt NUM_LAYER SPC  &kp BSPC
+
+#define ___BLE_L1___    &reset       &none        &none        &out OUT_BLE &bt BT_CLR
+#define ___BLE_L2___    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+#define ___BLE_L3___    &bootloader  &none        &none        &out OUT_USB &none
+
+#define ___NONE___      &none        &none        &none        &none        &none
