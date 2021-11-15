@@ -12,9 +12,8 @@
 #include "wrappers.h"
 
 #define BASE_LAYER 0
-#define NAV_LAYER 1
-#define NUM_LAYER 2
-#define BLE_LAYER 3
+#define RAISE_LAYER 1
+#define BLE_LAYER 2
 
 / {
 
@@ -38,7 +37,7 @@
             bindings = <&kp ESC>;
         };
 
-        combo_toggle_off {
+        combo_base {
             timeout-ms = <50>;
             key-positions = <14 16>;
             bindings = <&to 0>;
@@ -52,10 +51,10 @@
 
     // right side
 
-        combo_toggle_on {
+        combo_raise {
             timeout-ms = <50>;
             key-positions = <19 21>;
-            bindings = <&tog NAV_LAYER>;
+            bindings = <&tog RAISE_LAYER>;
         };
 
         combo_enter {
@@ -90,21 +89,12 @@
                 };
 
 
-       NAV_LAYER {
+       RAISE_LAYER {
           bindings = <
-  &none &none  &none  &none  &none  &none      &none    &none     &none   &none      &none &none
-  &none &none  &none  &none  &none  &none      &kp LEFT &kp DOWN  &kp UP  &kp RIGHT  &none &none
-  &none &none  &none  &none  &none  &none      &none    &none     &none   &none      &none &none
-                      &none  &none  &none      &none    &none     &none
-                        >;
-                };
-
-       NUM_LAYER {
-          bindings = <
-  &none &none  &kp N7  &kp N8  &kp N9  &none      &none    &none     &none   &none      &none &none
-  &none &none  &kp N1  &kp N2  &kp N3  &none      &kp RALT &hm RSHIFT DOT    &hm RCTRL COMMA  &kp RALT   &kp RGUI &none
-  &none &none  &kp N4  &kp N5  &kp N6  &none      &none    &none     &none   &none      &none &none
-                           &none &none &kp N0      &none &none  &none
+  &none &none  &kp N7  &kp N8  &kp N9  &none      &none          &none            &none         &none           &none     &none
+  &none &none  &kp N1  &kp N2  &kp N3  &none      &hm RALT LEFT  &hm RSHIFT DOWN  &hm RCTRL UP  &hm LALT RIGHT  &kp RGUI  &none
+  &none &none  &kp N4  &kp N5  &kp N6  &none      &none          &none            &none         &none           &none     &none
+                           &none &none &kp N0      &none  &none   &none
                         >;
                 };
 
