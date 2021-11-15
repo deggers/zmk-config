@@ -32,8 +32,6 @@
     combos {
         compatible = "zmk,combos";
 
-
-
         combo_esc {
             timeout-ms = <50>;
             key-positions = <15 16>;
@@ -43,7 +41,7 @@
         combo_toggle_off {
             timeout-ms = <50>;
             key-positions = <14 16>;
-            bindings = <&tog BASE_LAYER>;
+            bindings = <&to 0>;
         };
 
         combo_tab {
