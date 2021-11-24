@@ -12,7 +12,7 @@
 #include "wrappers.h"
 
 #define BASE_LAYER 0
-#define RAISE_LAYER 1
+#define NUM_LAYER 1
 #define BLE_LAYER 2
 
 / {
@@ -31,16 +31,34 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
+      combo_LT {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp LT>;
+        };
+
+      combo_LPAR {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp LPAR>;
+        };
+
+      combo_LBRC {
+            timeout-ms = <50>;
+            key-positions = <3 4>;
+            bindings = <&kp LBRC>;
+        };
+
+      combo_LBRC {
+            timeout-ms = <50>;
+            key-positions = <3 4>;
+            bindings = <&kp LBRC>;
+        };
+
+      combo_esc {
             timeout-ms = <50>;
             key-positions = <15 16>;
             bindings = <&kp ESC>;
-        };
-
-        combo_base {
-            timeout-ms = <50>;
-            key-positions = <14 16>;
-            bindings = <&to 0>;
         };
 
         combo_tab {
@@ -50,12 +68,6 @@
         };
 
     // right side
-
-        combo_raise {
-            timeout-ms = <50>;
-            key-positions = <19 21>;
-            bindings = <&tog RAISE_LAYER>;
-        };
 
         combo_enter {
             timeout-ms = <50>;
@@ -81,19 +93,18 @@
        compatible = "zmk,keymap";
        BASE_LAYER {
           bindings = <
-                  &none ___dusty_L1___         ___dusty_R1___ &none
-                  &none ___dusty_L2___         ___dusty_R2___ &none
-                  &none ___dusty_L3___         ___dusty_R3___ &none
-                  &none ___dusty_L4___         ___dusty_R4___ &none
+                  &none ___dusty_L1___             ___dusty_R1___ &none
+                  &none ___dusty_L2___             ___dusty_R2___ &none
+                  &none ___dusty_L3___             ___dusty_R3___ &none
+                  &none &lt BLE_LAYER &kp SPACE    &lt NAV_LAYER E &none &none
                         >;
                 };
 
-
-       RAISE_LAYER {
+       NUM_LAYER {
           bindings = <
-  &none &none  &kp N7  &kp N8  &kp N9  &none      &none          &none            &none         &none           &none     &none
-  &none &none  &kp N1  &kp N2  &kp N3  &none      &hm RALT LEFT  &hm RSHIFT DOWN  &hm RCTRL UP  &hm LALT RIGHT  &kp RGUI  &none
-  &none &none  &kp N4  &kp N5  &kp N6  &none      &none          &none            &none         &none           &none     &none
+  &none &none  &kp N7  &kp N8  &kp N9  &none      &none     &none       &none      &none     &none     &none
+  &none &none  &kp N1  &kp N2  &kp N3  &none      &sk RALT  &sk RSHIFT  &sk RCTRL  &sk LALT  &sk RGUI  &none
+  &none &none  &kp N4  &kp N5  &kp N6  &none      &none     &none       &none      &none     &none     &none
                            &none &none &kp N0      &none  &none   &none
                         >;
                 };
