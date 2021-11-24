@@ -49,10 +49,10 @@
             bindings = <&kp LBRC>;
         };
 
-      combo_LBRC {
+      combo_LBKT {
             timeout-ms = <50>;
-            key-positions = <3 4>;
-            bindings = <&kp LBRC>;
+            key-positions = <4 5>;
+            bindings = <&kp LBKT>;
         };
 
       combo_esc {
