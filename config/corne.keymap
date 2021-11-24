@@ -93,10 +93,10 @@
        compatible = "zmk,keymap";
        BASE_LAYER {
           bindings = <
-                  &none ___dusty_L1___             ___dusty_R1___ &none
-                  &none ___dusty_L2___             ___dusty_R2___ &none
-                  &none ___dusty_L3___             ___dusty_R3___ &none
-                  &none &lt BLE_LAYER ESC &kp SPACE    &lt NAV_LAYER E &none &none
+                  &none ___dusty_L1___                 ___dusty_R1___ &none
+                  &none ___dusty_L2___                 ___dusty_R2___ &none
+                  &none ___dusty_L3___                 ___dusty_R3___ &none
+                  &none &lt BLE_LAYER ESC &kp SPACE    &lt NUM_LAYER E &none &none
                         >;
                 };
 
