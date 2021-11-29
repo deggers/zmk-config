@@ -2,9 +2,9 @@
 
 #define ___dusty_L1___       &none   &kp K  &kp L  &kp D  &kp COMMA
 #define ___dusty_L2___       &kp R   &kp S  &kp N  &kp T  &kp P
-#define ___dusty_L3___       &kp X   &kp G  &kp M  &kp F  &kp DOT
+#define ___dusty_L3___       &kp deY   &kp G  &kp M  &kp F  &kp DOT
 
-#define ___dusty_R1___       &kp Q      &kp W  &kp H  &kp C  &kp deY
+#define ___dusty_R1___       &kp Q      &kp W  &kp H  &kp C  &kp X
 #define ___dusty_R2___       &kp deZ      &kp A  &kp U  &kp O  &kp I
 #define ___dusty_R3___       &kp deQUESTION &kp V  &kp B  &kp J  &kp deSQT
 
