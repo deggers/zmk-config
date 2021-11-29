@@ -23,7 +23,7 @@
 #define deNUMBER_8    NUMBER_8  // 8
 #define deNUMBER_9    NUMBER_9  // 9
 #define deNUMBER_0    NUMBER_0  // 0
-#define deESZETT      MINUS     // ß
+#define deNUMBER_S    MINUS     // ß
 #define deACUTE       EQUAL     // ´
 // Row 2
 #define deQ    Q             // Q
@@ -80,7 +80,7 @@
 // Row 1
 #define deDEGREE            LS(deCIRCUMFLEX)  // °
 #define deEXCLAMATION       LS(deNUMBER_1)    // !
-#define deSQT               LS(deNUMBER_2)    // "
+#define deDOUBLE_QUOTES     LS(deNUMBER_2)    // "
 #define deSECTION           LS(deNUMBER_3)    // §
 #define deDOLLAR            LS(deNUMBER_4)    // $
 #define dePERCENT           LS(deNUMBER_5)    // %
