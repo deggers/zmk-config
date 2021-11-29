@@ -1,3 +1,5 @@
+#include "german.dtsi"
+
 #define ___dusty_L1___       &none   &kp K  &kp L  &kp D  &kp COMMA
 #define ___dusty_L2___       &kp R   &kp S  &kp N  &kp T  &kp P
 #define ___dusty_L3___       &kp X   &kp G  &kp M  &kp F  &kp DOT
