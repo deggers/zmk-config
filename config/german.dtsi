@@ -23,7 +23,7 @@
 #define deNUMBER_8    NUMBER_8  // 8
 #define deNUMBER_9    NUMBER_9  // 9
 #define deNUMBER_0    NUMBER_0  // 0
-#define deNUMBER_S    MINUS     // ß
+#define deNUMBER_SS   MINUS     // ß
 #define deACUTE       EQUAL     // ´
 // Row 2
 #define deQ    Q             // Q
