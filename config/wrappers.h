@@ -4,7 +4,7 @@
 
 #define ___dusty_R1___       &kp Q      &kp W  &kp H  &kp C  &kp deY
 #define ___dusty_R2___       &kp deZ      &kp A  &kp U  &kp O  &kp I
-#define ___dusty_R3___       &kp de_QUESTION &kp V  &kp B  &kp J  &kp SQT
+#define ___dusty_R3___       &kp deQUESTION &kp V  &kp B  &kp J  &kp deSQT
 
 #define ___HDD_L1___    &kp J      &kp G       &kp M        &kp P        &kp V
 #define ___HDD_L2___    &hm LGUI R &hm LALT S  &hm LCTRL N  &hm LSHFT T  &hm RALT W
