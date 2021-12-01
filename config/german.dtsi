@@ -135,4 +135,4 @@
 #define LG LEFT_GUI
 #define LA LEFT_ALT
 #define LC LEFT_CONTROL
-#define LS LEFT_SHIT
+#define LS LEFT_SHIFT
