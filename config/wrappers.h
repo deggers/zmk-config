@@ -12,7 +12,7 @@
 #define ___HDD_L2___    &hm LGUI R &hm LALT S  &hm LCTRL N  &hm LSHFT T  &hm RALT W
 #define ___HDD_L3___    &kp X      &kp C       &kp L        &kp D        &kp B
 
-#define ___HDD_R1___    &kp MINUS        &kp DOT      &kp deSQT      &kp DQT     &kp deSLASH
+#define ___HDD_R1___    &kp MINUS        &kp DOT      &kp deSQT      &kp deDQT     &kp deSLASH
 #define ___HDD_R2___    &hm RALT COMMA   &hm LSHFT H  &hm LCTRL A  &hm LALT O  &hm LGUI I
 #define ___HDD_R3___    &kp deZ          &kp F        &kp U        &kp K       &kp deY
 
