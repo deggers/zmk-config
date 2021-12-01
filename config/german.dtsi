@@ -121,7 +121,7 @@
 #define deLEFT_BRACKET  RA(deNUMBER_8)    // [
 #define deRIGHT_BRACKET RA(deNUMBER_9)    // ]
 #define deRIGHT_BRACE   RA(deNUMBER_0)    // }
-#define deBACKSLASH     RA(deESZETT)      // (backslash)
+#define deBACKSLASH     RA(deNUMBER_SS)      // (backslash)
 // Row 2
 #define deAT_SIGN       RA(deQ)           // @
 #define deEURO          RA(deE)           // €
