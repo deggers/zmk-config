@@ -23,53 +23,75 @@
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods";
             #binding-cells = <2>;
-            tapping_term_ms = <125>;
+            tapping_term_ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
     };
 
+ /* LEFT HAND SIDE POSITIONS
+ *    ┌────┬────┬────┬────┬────┐
+ * 00 │ 01 │ 02 │ 03 │ 04 │ 05 │ L
+ *    ├────┼────┼────┼────┼────┤ E
+ * 12 │ 13 │ 14 │ 15 │ 16 │ 17 │ F
+ *    ├────┼────┼────┼────┼────┤ T
+ * 24 │ 25 │ 26 │ 27 │ 28 │ 29 │
+ *    └────┴────┴────┴────┴────┘
+ */
     combos {
         compatible = "zmk,combos";
 
-      combo_LT {
+      // "<"
+      combo_LESS_THAN {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            bindings = <&kp LT>;
+            bindings = <&kp deLESS_THAN>;
         };
 
-      combo_LPAR {
+      // "("
+      combo_LEFT_PARENTHESIS {
             timeout-ms = <50>;
             key-positions = <2 3>;
-            bindings = <&kp LPAR>;
+            bindings = <&kp deLEFT_PARENTHESIS>;
         };
 
-      combo_LBRC {
+      // "{"
+      combo_LEFT_BRACE {
             timeout-ms = <50>;
             key-positions = <3 4>;
-            bindings = <&kp LBRC>;
+            bindings = <&kp deLEFT_BRACE>;
         };
 
-      combo_LBKT {
+      // "["
+      combo_LEFT_BRACKET { // "["
             timeout-ms = <50>;
             key-positions = <4 5>;
-            bindings = <&kp LBKT>;
+            bindings = <&kp deLEFT_BRACKET>;
         };
 
+      // "ESC"
       combo_esc {
             timeout-ms = <50>;
             key-positions = <15 16>;
             bindings = <&kp ESC>;
         };
 
-        combo_tab {
+      // "TAB"
+      combo_tab {
             timeout-ms = <50>;
             key-positions = <14 15>;
             bindings = <&kp TAB>;
         };
 
-    // right side
-
+ /* RIGHT HAND SIDE POSITIONS
+ *   ┌────┬────┬────┬────┬────┐
+ * R │ 06 │ 07 │ 08 │ 09 │ 10 │ 11
+ * I ├────┼────┼────┼────┼────┤
+ * G │ 18 │ 19 │ 20 │ 21 │ 22 │ 23
+ * H ├────┼────┼────┼────┼────┤
+ * T │ 30 │ 31 │ 32 │ 33 │ 34 │ 35
+ *   └────┴────┴────┴────┴────┘
+ */
         combo_enter {
             timeout-ms = <50>;
             key-positions = <19 20>;
@@ -94,9 +116,9 @@
        compatible = "zmk,keymap";
        BASE_LAYER {
           bindings = <
-                  &none ___dusty_L1___                 ___dusty_R1___ &none
-                  &none ___dusty_L2___                 ___dusty_R2___ &none
-                  &none ___dusty_L3___                 ___dusty_R3___ &none
+                  &none ___HDD_L1___                 ___HDD_R1___ &none
+                  &none ___HDD_L2___                 ___HDD_R2___ &none
+                  &none ___HDD_L3___                 ___HDD_R3___ &none
                   &none &lt BLE_LAYER ESC &kp SPACE    &lt NUM_LAYER E &none &none
                         >;
                 };

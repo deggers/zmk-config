@@ -80,7 +80,7 @@
 // Row 1
 #define deDEGREE            LS(deCIRCUMFLEX)  // °
 #define deEXCLAMATION       LS(deNUMBER_1)    // !
-#define deSQT               LS(deNUMBER_2)    // "
+#define deDQT               LS(deNUMBER_2)    // "
 #define deSECTION           LS(deNUMBER_3)    // §
 #define deDOLLAR            LS(deNUMBER_4)    // $
 #define dePERCENT           LS(deNUMBER_5)    // %
@@ -94,7 +94,7 @@
 // Row 2
 #define deASTERISK          LS(dePLUS)        // *
 // Row 3
-#define deSINGLE_QUOTE      LS(deHASH)        // '
+#define deSQT               LS(deHASH)        // '
 // Row 4
 #define deGREATER_THAN      LS(deLESS_THAN)   // >
 #define deSEMICOLON         LS(deCOMMA)       // ;

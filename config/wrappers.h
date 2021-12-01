@@ -12,9 +12,9 @@
 #define ___HDD_L2___    &hm LGUI R &hm LALT S  &hm LCTRL N  &hm LSHFT T  &hm RALT W
 #define ___HDD_L3___    &kp X      &kp C       &kp L        &kp D        &kp B
 
-#define ___HDD_R1___    &kp MINUS        &kp DOT      &kp SQT      &kp DQT     &kp FSLH
+#define ___HDD_R1___    &kp MINUS        &kp DOT      &kp deSQT      &kp DQT     &kp deSLASH
 #define ___HDD_R2___    &hm RALT COMMA   &hm LSHFT H  &hm LCTRL A  &hm LALT O  &hm LGUI I
-#define ___HDD_R3___    &kp Z            &kp F        &kp U        &kp K       &kp Y
+#define ___HDD_R3___    &kp deZ          &kp F        &kp U        &kp K       &kp deY
 
 #define ___BLE_L1___    &reset       &none        &none        &out OUT_BLE &bt BT_CLR
 #define ___BLE_L2___    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
