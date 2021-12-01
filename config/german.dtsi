@@ -129,10 +129,3 @@
 // Row 4
 #define dePIPE          RA(deLESS_THAN)   // |
 #define deMICRO         RA(deM)           // µ
-
-
-// CUSTOM STUFF
-#define LG LEFT_GUI
-#define LA LEFT_ALT
-#define LC LEFT_CONTROL
-#define LS LEFT_SHIFT
