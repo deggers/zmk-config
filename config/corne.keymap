@@ -132,6 +132,15 @@
                         >;
                 };
 
+       NAV_LAYER {
+          bindings = <
+  &none &none   &none   &none   &none   &none      &none     &none     &none   &none      &none  &none
+  &none &kp LG  &kp LA  &kp LC  &kp LS  &none      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &none
+  &none &none   &none   &none   &none   &none      &none     &none     &none   &none      &none  &none
+                           &none &none &none      &none  &none   &none
+                        >;
+                };
+
       BLE_LAYER {
          bindings = <
                  &none ___BLE_L1___             ___NONE___ &none
