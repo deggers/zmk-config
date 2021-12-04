@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "Mod Tap Left";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-unless-interrupted";
             tapping-term-ms = <100>;// <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
@@ -44,13 +44,12 @@
             compatible = "zmk,behavior-hold-tap";
             label = "Mod Tap Right";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-unless-interrupted";
             tapping-term-ms = <100>;// <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <1 2 3 4 5 13 14 15 16 17 25 26 27 28 29>;    // <---[[left-hand keys]]
         };
-
     };
 
  /* LEFT HAND SIDE POSITIONS
