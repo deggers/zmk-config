@@ -110,14 +110,14 @@
       combo_tab {
             timeout-ms = <50>;
             key-positions = <26 27>;
-            bindings = <&K_COPY>;
+            bindings = <&kp K_COPY>;
         };
 
       // "PASTE"
       combo_tab {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            bindings = <&K_PASTE>;
+            bindings = <&kp K_PASTE>;
         };
  /* RIGHT HAND SIDE POSITIONS
  *   ┌────┬────┬────┬────┬────┐
