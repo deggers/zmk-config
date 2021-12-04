@@ -1,11 +1,11 @@
 #include "german.dtsi"
 
 #define ___dusty_L1___       &none   &kp K  &kp L  &kp D  &kp COMMA
-#define ___dusty_L2___       &LHM LGUI R   &LHM LALT S  &LHM LCTRL N  &LHM LSHFT T  &LHM RALT P
+#define ___dusty_L2___       &mtl LGUI R   &mtl LALT S  &mtl LCTRL N  &mtl LSHFT T  &mtl RALT P
 #define ___dusty_L3___       &kp deY   &kp G  &kp M  &kp F  &kp DOT
 
 #define ___dusty_R1___       &kp Q      &kp W  &kp H  &kp C  &kp X
-#define ___dusty_R2___       &RHM RALT deZ      &RHM LSHIFT A  &RHM LCTRL U  &RHM LALT O  &RHM LGUI I
+#define ___dusty_R2___       &mtr RALT deZ      &mtr LSHIFT A  &mtr LCTRL U  &mtr LALT O  &mtr LGUI I
 #define ___dusty_R3___       &kp deQUESTION &kp V  &kp B  &kp J  &kp deSQT
 
 #define ___HDD_L1___    &kp J      &kp G       &kp M        &kp P        &kp V
