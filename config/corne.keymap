@@ -107,14 +107,14 @@
         };
 
       // "COPY"
-      combo_tab {
+      combo_COPY {
             timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&kp K_COPY>;
         };
 
       // "PASTE"
-      combo_tab {
+      combo_PASTE {
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp K_PASTE>;
