@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "Mod Tap Left";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;// <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "Mod Tap Right";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;// <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
