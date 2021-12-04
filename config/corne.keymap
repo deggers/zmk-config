@@ -106,6 +106,19 @@
             bindings = <&kp TAB>;
         };
 
+      // "COPY"
+      combo_tab {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&K_COPY>;
+        };
+
+      // "PASTE"
+      combo_tab {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&K_PASTE>;
+        };
  /* RIGHT HAND SIDE POSITIONS
  *   ┌────┬────┬────┬────┬────┐
  * R │ 06 │ 07 │ 08 │ 09 │ 10 │ 11
