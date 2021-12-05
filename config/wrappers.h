@@ -1,6 +1,6 @@
 #include "german.dtsi"
 
-#define ___dusty_L1___       &kp deMinus &kp K  &kp L  &kp D  &kp COMMA
+#define ___dusty_L1___       &kp deMINUS &kp K  &kp L  &kp D  &kp COMMA
 #define ___dusty_L2___       &mtl LGUI R   &mtl LALT S  &mtl LCTRL N  &mtl LSHFT T  &mtl RALT P
 #define ___dusty_L3___       &kp deY   &kp G  &kp M  &kp F  &kp DOT
 
