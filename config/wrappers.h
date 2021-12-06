@@ -8,6 +8,14 @@
 #define ___dusty_R2___       &mtr RALT deZ      &mtr LSHIFT A  &mtr LCTRL U  &mtr LALT O  &mtr LGUI I
 #define ___dusty_R3___       &kp deQUESTION &kp V  &kp B  &kp J  &kp deSQT
 
+#define ___APTex_L1___       &kp deSLASH &kp W  &kp G  &kp D  &kp B
+#define ___APTex_L2___       &mtl LGUI R   &mtl LALT S  &mtl LCTRL T  &mtl LSHFT H  &mtl RALT V
+#define ___APTex_L3___       &kp X   &kp C  &kp M  &kp K  &kp Q
+
+#define ___APTex_R1___       &kp J      &kp F  &kp O  &kp U  &kp deSEMI
+#define ___APTex_R2___       &mtr RALT deY      &mtr LSHIFT N  &mtr LCTRL A  &mtr LALT I  &mtr LGUI L
+#define ___APTex_R3___       &kp deZ &kp P  &kp deSQT  &kp COMMA  &kp DOT
+
 #define ___HDD_L1___    &kp J      &kp G       &kp M        &kp P        &kp V
 #define ___HDD_L2___    &hm LGUI R &hm LALT S  &hm LCTRL N  &hm LSHFT T  &hm RALT W
 #define ___HDD_L3___    &kp X      &kp C       &kp L        &kp D        &kp B
