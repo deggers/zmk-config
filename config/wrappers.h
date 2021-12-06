@@ -12,7 +12,7 @@
 #define ___APTex_L2___       &mtl LGUI R   &mtl LALT S  &mtl LCTRL T  &mtl LSHFT H  &mtl RALT V
 #define ___APTex_L3___       &kp X   &kp C  &kp M  &kp K  &kp Q
 
-#define ___APTex_R1___       &kp J      &kp F  &kp O  &kp U  &kp deSEMI
+#define ___APTex_R1___       &kp J      &kp F  &kp O  &kp U  &kp deQUESTION
 #define ___APTex_R2___       &mtr RALT deY      &mtr LSHIFT N  &mtr LCTRL A  &mtr LALT I  &mtr LGUI L
 #define ___APTex_R3___       &kp deZ &kp P  &kp deSQT  &kp COMMA  &kp DOT
 

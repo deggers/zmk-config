@@ -97,7 +97,7 @@
 #define deSQT               LS(deHASH)        // '
 // Row 4
 #define deGREATER_THAN      LS(deLESS_THAN)   // >
-#define deSEMICOLON         LS(deCOMMA)       // ;
+#define deSEMI              LS(deCOMMA)       // ;
 #define deCOLON             LS(dePERIOD)      // :
 #define deUNDERSCORE        LS(deMINUS)       // _
 
