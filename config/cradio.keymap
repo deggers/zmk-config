@@ -93,7 +93,7 @@
                   ___dusty_L1___         ___dusty_R1___
                   ___dusty_L2___         ___dusty_R2___
                   ___dusty_L3___         ___dusty_R3___
-    &none &lt BLE_LAYER ESC &kp SPACE    &lt NUM_LAYER E &none &none
+    &lt BLE_LAYER ESC &kp SPACE          &lt NUM_LAYER E &none
                   >;
                 };
 
