@@ -27,7 +27,7 @@
 #define ___HDD_R3___    &kp deZ          &kp F        &kp U        &kp K       &kp deY
 
 #define ___APTexD_L1___    &kp X      &kp W       &kp C        &kp K        &kp deZ
-#define ___APTexD_L2___    &kp R      &kp S       &kp T        &hm H        &kp M
+#define ___APTexD_L2___    &kp R      &kp S       &kp T        &kp H        &kp M
 #define ___APTexD_L3___    &kp J      &kp V       &kp G        &kp deY      &kp D
 
 #define ___APTexD_R1___    &kp deSQT  &kp F       &kp O        &kp U        &kp Q
