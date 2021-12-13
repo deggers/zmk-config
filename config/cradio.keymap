@@ -15,7 +15,6 @@
 #define NAV_LAYER 1
 #define NUM_LAYER 2
 #define BLE_LAYER 3
-#define LAYER_APTexD 4
 
 / {
 
