@@ -91,13 +91,12 @@
        compatible = "zmk,keymap";
        BASE_LAYER {
           bindings = <
-                  ___dusty_L1___         ___dusty_R1___
-                  ___dusty_L2___         ___dusty_R2___
-                  ___dusty_L3___         ___dusty_R3___
-    &lt BLE_LAYER ESC &kp SPACE          &lt NUM_LAYER E &tog LAYER_APTexD
+                  ___APTexD_L1___         ___APTexD_R1___
+                  ___APTexD_L2___         ___APTexD_R2___
+                  ___APTexD_L3___         ___APTexD_R3___
+    &lt BLE_LAYER ESC &kp SPACE          &lt NUM_LAYER E &none
                   >;
                 };
-
 
        NAV_LAYER {
           bindings = <
@@ -127,12 +126,5 @@
                 };
         };
 
-       LAYER_APTexD {
-          bindings = <
-                  ___APTexD_L1___         ___APTexD_R1___
-                  ___APTexD_L2___         ___APTexD_R2___
-                  ___APTexD_L3___         ___APTexD_R3___
-    &lt BLE_LAYER ESC &kp SPACE          &lt NUM_LAYER E &tog BASE_LAYER
-                  >;
-                };
+
 };
