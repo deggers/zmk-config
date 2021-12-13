@@ -36,7 +36,7 @@
 
 #define ___APTexD_R1___    &kp deSQT  &kp F       &kp O        &kp U        &kp Q
 #define ___APTexD_R2___    &kp B      &kp N       &kp A        &kp I        &kp L
-#define ___APTexD_R3___    &kp deSEMI &kp P       &kp deSLASH  &kp deCOMMA  &kp deDOT
+#define ___APTexD_R3___    &kp deSEMI &kp P       &kp deSLASH  &kp COMMA    &kp DOT
 
 // other stuff than layouts 
 
