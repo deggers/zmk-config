@@ -44,7 +44,7 @@
 
 // Old Stuff
 #define ___dusty_L1_HRM___       &none      &kp K       &kp L        &kp D        &kp COMMA
-#define ___dusty_L2_HRM___       & R &hm LALT S  &hm LCTRL N  &hm LSHFT T  &hm RALT P
+#define ___dusty_L2_HRM___       &kp R &hm LALT S  &hm LCTRL N  &hm LSHFT T  &hm RALT P
 #define ___dusty_L3_HRM___       &kp X      &kp G       &kp M        &kp F        &kp DOT
 #define ___dusty_L4_HRM___                              &lt BLE_LAYER ESC &kp SPACE
 
