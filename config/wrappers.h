@@ -1,5 +1,7 @@
 #include "german.dtsi"
 
+// layouts 
+
 #define ___dusty_L1___       &kp deMINUS &kp K  &kp L  &kp D  &kp COMMA
 #define ___dusty_L2___       &mtl LGUI R   &mtl LALT S  &mtl LCTRL N  &mtl LSHFT T  &mtl RALT P
 #define ___dusty_L3___       &kp deY   &kp G  &kp M  &kp F  &kp DOT
@@ -23,6 +25,20 @@
 #define ___HDD_R1___    &kp MINUS        &kp DOT      &kp deSQT      &kp deDQT     &kp deSLASH
 #define ___HDD_R2___    &hm RALT COMMA   &hm LSHFT H  &hm LCTRL A  &hm LALT O  &hm LGUI I
 #define ___HDD_R3___    &kp deZ          &kp F        &kp U        &kp K       &kp deY
+
+// x w c k z  ' f o u q
+// r s t h m  b n a i l
+// j v g y d  ; p / , . e
+
+#define ___APTexD_L1___    &kp X      &kp W       &kp C        &kp K        &kp Z
+#define ___APTexD_L2___    &kp R      &kp S       &kp T        &hm H        &kp M
+#define ___APTexD_L3___    &kp J      &kp V       &kp G        &kp deY      &kp D
+
+#define ___APTexD_R1___    &kp deSQT  &kp F       &kp O        &kp U        &kp Q
+#define ___APTexD_R2___    &kp B      &kp N       &kp A        &kp I        &kp L
+#define ___APTexD_R3___    &kp deSEMI &kp P       &kp deSLASH  &kp deCOMMA  &kp deDOT
+
+// other stuff than layouts 
 
 #define ___BLE_L1___    &reset       &none        &none        &out OUT_BLE &bt BT_CLR
 #define ___BLE_L2___    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
