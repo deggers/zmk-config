@@ -31,7 +31,7 @@
 #define ___louvre_L3___    &kp deSEMI &kp W       &kp G        &kp B        &kp V
 
 #define ___louvre_R1___    &kp X      &kp L       &kp O        &kp U        &kp Q
-#define ___louvre_R2___    &kp B      &kp N       &kp A        &kp I        &kp M
+#define ___louvre_R2___    &kp deZ    &kp N       &kp A        &kp I        &kp M
 #define ___louvre_R3___    &kp deSQT  &kp J       &kp DOT      &kp COMMA    &kp deSLASH
 // other stuff than layouts 
 
