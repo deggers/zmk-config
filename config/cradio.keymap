@@ -29,15 +29,6 @@
 / {
 
     behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods";
-            #binding-cells = <2>;
-            tapping_term_ms = <300>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
         mtl: mtl {
             compatible = "zmk,behavior-hold-tap";
             label = "Mod Tap Left";
@@ -100,10 +91,10 @@
        compatible = "zmk,keymap";
        BASE_LAYER {
           bindings = <
-                  ___dusty_L1___         ___dusty_R1___
-                  ___dusty_L2___         ___dusty_R2___
-                  ___dusty_L3___         ___dusty_R3___
-    &lt BLE_LAYER ESC &lt NAV_LAYER SPACE          &lt NUM_LAYER E &none
+                  ___louvre_L1___         ___louvre_R1___
+                  ___louvre_L2___         ___louvre_R2___
+                  ___louvre_L3___         ___louvre_R3___
+    &lt BLE_LAYER ESC &lt NAV_LAYER SPACE          &lt NUM_LAYER E &sk LSHIFT
                   >;
                 };
 
