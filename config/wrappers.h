@@ -26,13 +26,13 @@
 #define ___APTexD_R2___    &kp B      &kp N       &kp A        &kp I        &kp L
 #define ___APTexD_R3___    &kp deSEMI &kp P       &kp deSLASH  &kp COMMA    &kp DOT
 
-#define ___louvre_L1___    &kp X      &kp F       &kp C        &kp K        &kp P
+#define ___louvre_L1___    &kp deY    &kp F       &kp C        &kp K        &kp P
 #define ___louvre_L2___    &kp R      &kp S       &kp T        &kp H        &kp D
 #define ___louvre_L3___    &kp deSEMI &kp W       &kp G        &kp B        &kp V
 
-#define ___louvre_R1___    &kp deY    &kp L       &kp O        &kp U        &kp deSQT
+#define ___louvre_R1___    &kp X      &kp L       &kp O        &kp U        &kp Q
 #define ___louvre_R2___    &kp B      &kp N       &kp A        &kp I        &kp M
-#define ___louvre_R3___    &kp Q      &kp DOT     &kp deSLASH  &kp COMMA    &kp deSLASH
+#define ___louvre_R3___    &kp deSQT  &kp J       &kp DOT      &kp COMMA    &kp deSLASH
 // other stuff than layouts 
 
 #define ___BLE_L1___    &reset       &none        &none        &out OUT_BLE &bt BT_CLR
