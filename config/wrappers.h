@@ -28,8 +28,8 @@
 
 
 
-#define ___louvre_L1___    &kp deSQT  &kp F       &kp M        &kp K        &kp P
-#define ___louvre_L2___    &kp R      &kp S       &kp T        &kp H        &kp D
+#define ___louvre_L1___    &kp deSQT  &kp F       &kp M        &kp D        &kp P
+#define ___louvre_L2___    &kp R      &kp S       &kp T        &kp H        &kp K
 #define ___louvre_L3___    &kp deSEMI &kp W       &kp V        &kp B        &kp deY
 
 #define ___louvre_R1___    &kp X       &kp L       &kp O        &kp U        &kp G
