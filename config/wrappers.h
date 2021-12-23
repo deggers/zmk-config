@@ -28,11 +28,11 @@
 
 
 
-#define ___louvre_L1___    &kp deSQT  &kp F       &kp M        &kp D        &kp P
-#define ___louvre_L2___    &kp R      &kp S       &kp T        &kp H        &kp K
-#define ___louvre_L3___    &kp deSEMI &kp W       &kp V        &kp B        &kp deY
+#define ___louvre_L1___    &kp deZ    &kp F       &kp M        &kp D        &kp deY
+#define ___louvre_L2___    &kp R      &kp S       &kp T        &kp H        &kp P
+#define ___louvre_L3___    &kp X      &kp W       &kp V        &kp K        &kp B
 
-#define ___louvre_R1___    &kp X       &kp L       &kp O        &kp U        &kp G
+#define ___louvre_R1___    &kp deSEMI  &kp L       &kp O        &kp U        &kp G
 #define ___louvre_R2___    &kp deZ     &kp N       &kp A        &kp I        &kp C
 #define ___louvre_R3___    &kp deSLASH &kp J       &kp COMMA    &kp DOT      &kp Q
 // other stuff than layouts 
