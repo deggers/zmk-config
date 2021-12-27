@@ -34,16 +34,7 @@
 
 #define ___louvre_R1___    &kp deSEMI  &kp L       &kp U        &kp O        &kp G
 #define ___louvre_R2___    &kp deSQT   &kp N       &kp I        &kp A        &kp C
-#define ___louvre_R3___    &kp deSLASH &kp J       &kp DOT      &kp COMMO    &kp Q
-
-/*
-NIAT 
-; f c k p  x l u o v
-r s m h d  z n i a t
-' w g b y  / j . , q e
-*/ 
-
-
+#define ___louvre_R3___    &kp deSLASH &kp J       &kp DOT      &kp COMMA    &kp Q
 
 // other stuff than layouts 
 
