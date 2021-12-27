@@ -32,9 +32,19 @@
 #define ___louvre_L2___    &kp R      &kp S       &kp T        &kp H        &kp P
 #define ___louvre_L3___    &kp X      &kp W       &kp V        &kp K        &kp B
 
-#define ___louvre_R1___    &kp deSEMI  &kp L       &kp O        &kp U        &kp G
-#define ___louvre_R2___    &kp deZ     &kp N       &kp A        &kp I        &kp C
-#define ___louvre_R3___    &kp deSLASH &kp J       &kp COMMA    &kp DOT      &kp Q
+#define ___louvre_R1___    &kp deSEMI  &kp L       &kp U        &kp O        &kp G
+#define ___louvre_R2___    &kp deSQT   &kp N       &kp I        &kp A        &kp C
+#define ___louvre_R3___    &kp deSLASH &kp J       &kp DOT      &kp COMMO    &kp Q
+
+/*
+NIAT 
+; f c k p  x l u o v
+r s m h d  z n i a t
+' w g b y  / j . , q e
+*/ 
+
+
+
 // other stuff than layouts 
 
 #define ___BLE_L1___    &reset       &none        &none        &out OUT_BLE &bt BT_CLR
