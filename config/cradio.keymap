@@ -28,54 +28,29 @@
 
 / {
 
-    behaviors {
-        mtl: mtl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Mod Tap Left";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <300>;// <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <0>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>;    // <---[[right-hand keys]]
-        };
-
-        mtr: mtr {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Mod Tap Right";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <300>;// <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <0>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;    // <---[[left-hand keys]]
-        };
-
-    };
-
     combos {
         compatible = "zmk,combos";
 
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <12 13>;
             bindings = <&kp ESC>;
         };
 
         combo_tab {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <11 12>;
             bindings = <&kp TAB>;
         };
 
         combo_enter {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <16 17>;
             bindings = <&kp RET>;
         };
 
         combo_ctrl_backspace {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <16 17 18>;
             bindings = <&kp LC(BSPC)>;
         };
@@ -91,9 +66,9 @@
        compatible = "zmk,keymap";
        BASE_LAYER {
           bindings = <
-                  ___louvre_L1___         ___louvre_R1___
-                  ___louvre_L2___         ___louvre_R2___
-                  ___louvre_L3___         ___louvre_R3___
+                  ___dusty_L1___         ___dusty_R1___
+                  ___dusty_L2___         ___dusty_R2___
+                  ___dusty_L3___         ___dusty_R3___
     &lt BLE_LAYER ESC &lt NAV_LAYER SPACE          &lt NUM_LAYER E &sk LSHIFT
                   >;
                 };

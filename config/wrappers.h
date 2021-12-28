@@ -2,13 +2,21 @@
 
 // layouts 
 
-#define ___dusty_L1___       &kp deMINUS &kp K  &kp L  &kp D  &kp COMMA
-#define ___dusty_L2___       &mtl LGUI R   &mtl LALT S  &mtl LCTRL N  &mtl LSHFT T  &mtl RALT P
-#define ___dusty_L3___       &kp deY   &kp G  &kp M  &kp F  &kp DOT
+/* dusty refined 
+x f l d v  - u o c k
+r s n t b  , i a m h
+' w j p q  ? . z g y e
+*/ 
 
-#define ___dusty_R1___       &kp Q      &kp W  &kp H  &kp C  &kp X
-#define ___dusty_R2___       &mtr RALT deZ      &mtr LSHIFT A  &mtr LCTRL U  &mtr LALT O  &mtr LGUI I
-#define ___dusty_R3___       &kp deQUESTION &kp V  &kp B  &kp J  &kp deSQT
+#define ___dusty_L1___       &kp X     &kp F  &kp L  &kp D  &kp V
+#define ___dusty_L2___       &kp R     &kp S  &kp N  &kp T  &kp B
+#define ___dusty_L3___       &kp deSQT &kp W  &kp J  &kp P  &kp Q
+
+#define ___dusty_R1___       &none          &kp U    &kp O    &kp C  &kp K
+#define ___dusty_R2___       &kp COMMA      &kp I    &kp A    &kp M  &kp H
+#define ___dusty_R3___       &kp deQUESTION &kp DOT  &kp deZ  &kp G  &kp deY
+
+
 
 #define ___APTex_L1___       &kp deSLASH &kp W  &kp G  &kp D  &kp B
 #define ___APTex_L2___       &mtl LGUI R   &mtl LALT S  &mtl LCTRL T  &mtl LSHFT H  &mtl RALT V
