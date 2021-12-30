@@ -90,7 +90,7 @@
 #define deRIGHT_PARENTHESIS LS(deNUMBER_9)    // )
 #define deEQUAL             LS(deNUMBER_0)    // =
 #define deQUESTION          LS(deNUMBER_SS)   // ?
-#define deGRAVE             LS(deNUMBER_ACUT) // ` (dead)
+#define deGRAVE             LS(deACUTE) // ` (dead)
 // Row 2
 #define deASTERISK          LS(dePLUS)        // *
 // Row 3
