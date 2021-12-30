@@ -3,9 +3,9 @@
 // layouts 
 
 /* dusty refined 
-x f l d v  - u o c k
-r s n t b  , i a m h
-' w j p q  ? . z g y e
+	x f l d v  - u o c k
+	r s n t b  , i a m h
+	' w j p q  ? . z g y e
 */ 
 
 #define ___dusty_L1___       &kp X     &kp F  &kp L  &kp D  &kp V
@@ -16,6 +16,19 @@ r s n t b  , i a m h
 #define ___dusty_R2___       &kp COMMA      &kp I    &kp A    &kp M  &kp H
 #define ___dusty_R3___       &kp deQUESTION &kp DOT  &kp deZ  &kp G  &kp deY
 
+/*  NAIL 
+	- f c m v  ? y o u z
+	r s t h w  d n a i l
+	' k g . b  j p x , q e
+*/
+
+#define ___nail_L1___    &kp deGRAVE  &kp F       &kp C        &kp M        &kp V
+#define ___nail_L2___    &kp R        &kp S       &kp T        &kp H        &kp W
+#define ___nail_L3___    &kp deSQT    &kp K       &kp G        &kp DOT      &kp B
+
+#define ___nail_R1___    &kp deQUESTION  &kp deY  &kp O  &kp U        &kp deZ
+#define ___nail_R2___    &kp D           &kp N    &kp A  &kp I        &kp L
+#define ___nail_R3___    &kp J           &kp P    &kp X  &kp COMMA    &kp Q
 
 
 #define ___APTex_L1___       &kp deSLASH &kp W  &kp G  &kp D  &kp B

@@ -12,7 +12,7 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define deCIRCUMFLEX  GRAVE     // ^
+#define deGRAVE  GRAVE     // ^
 #define deNUMBER_1    NUMBER_1  // 1
 #define deNUMBER_2    NUMBER_2  // 2
 #define deNUMBER_3    NUMBER_3  // 3
@@ -78,7 +78,7 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define deDEGREE            LS(deCIRCUMFLEX)  // °
+#define deDEGREE            LS(deGRAVE)  // °
 #define deEXCLAMATION       LS(deNUMBER_1)    // !
 #define deDQT               LS(deNUMBER_2)    // "
 #define deSECTION           LS(deNUMBER_3)    // §
