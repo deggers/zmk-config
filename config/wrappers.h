@@ -17,18 +17,18 @@
 #define ___dusty_R3___       &kp deQUESTION &kp DOT  &kp deZ  &kp G  &kp deY
 
 /*  NAIL 
-	- f c m v  ? y o u z
-	r s t h w  d n a i l
-	' k g . b  j p x , q e
+  ' f c k ?  - b o u z
+  r s t h d  q n a i l
+  x y g m v  w p . , j e
 */
 
-#define ___nail_L1___    &kp deGRAVE  &kp F       &kp C        &kp M        &kp V
-#define ___nail_L2___    &kp R        &kp S       &kp T        &kp H        &kp W
-#define ___nail_L3___    &kp deSQT    &kp K       &kp G        &kp DOT      &kp B
+#define ___nail_L1___    &kp deSQT  &kp F       &kp C        &kp K        &kp deQUESTION
+#define ___nail_L2___    &kp R        &kp S       &kp T        &kp H        &kp D
+#define ___nail_L3___    &kp X    &kp deY       &kp G        &kp M      &kp V
 
-#define ___nail_R1___    &kp deQUESTION  &kp deY  &kp O  &kp U        &kp deZ
-#define ___nail_R2___    &kp D           &kp N    &kp A  &kp I        &kp L
-#define ___nail_R3___    &kp J           &kp P    &kp X  &kp COMMA    &kp Q
+#define ___nail_R1___    &kp deGRAVE  &kp B  &kp O  &kp U        &kp deZ
+#define ___nail_R2___    &kp Q           &kp N    &kp A  &kp I        &kp L
+#define ___nail_R3___    &kp W           &kp P    &kp DOT  &kp COMMA    &kp J
 
 
 #define ___APTex_L1___       &kp deSLASH &kp W  &kp G  &kp D  &kp B
