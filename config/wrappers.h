@@ -4,8 +4,8 @@
 
 /*  NAIL 
   ' f c k ?  - b o u z
-  r s t h d  q n a i l
-  x y g m v  w p . , j e
+  r s t h d  w n a i l
+  x y g m v  q p . , j e
 */
 
 #define ___nail_L1___    &kp deSQT   &kp F        &kp C       &kp K         &kp deQUESTION
@@ -13,8 +13,8 @@
 #define ___nail_L3___    &kp X       &kp deY      &kp G       &kp M         &kp V
 
 #define ___nail_R1___    &kp deGRAVE  &kp B         &kp O       &kp U        &kp deZ
-#define ___nail_R2___    &kp Q        &hm LSHIFT N  &hm LALT A  &hm LCTRL I  &hm LGUI L
-#define ___nail_R3___    &kp W        &kp P         &kp DOT     &kp COMMA    &kp J
+#define ___nail_R2___    &kp W        &hm LSHIFT N  &hm LALT A  &hm LCTRL I  &hm LGUI L
+#define ___nail_R3___    &kp Q        &kp P         &kp DOT     &kp COMMA    &kp J
 
 // other stuff than layouts 
 
