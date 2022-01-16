@@ -91,7 +91,7 @@
   &none  &none  &none  &none  &none      &none  &none             &kp deOE  &kp deUE &none
   &none  &none  &none  &none  &none      &none  &kp deNUMBER_SS   &kp deAE  &none    &none
   &none  &none  &none  &none  &none      &none  &none   &none     &none    &none
-                        &none &none      &none  &none
+                        &none &none      &sl BLE_LAYER  &none
                         >;
                 };
 
