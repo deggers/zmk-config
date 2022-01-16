@@ -67,7 +67,7 @@
 				compatible = "zmk,behavior-hold-tap";
 				label = "HOMEROW_MODS";
 				#binding-cells = <2>;
-				tapping-term-ms = <150>;
+				tapping-term-ms = <225>;
 				quick-tap-ms = <0>;
 				flavor = "tap-preferred";
 				bindings = <&kp>, <&kp>;
@@ -78,10 +78,10 @@
        compatible = "zmk,keymap";
        BASE_LAYER {
           bindings = <
-                  ___nail_L1___         ___nail_R1___
-                  ___nail_L2___         ___nail_R2___
-                  ___nail_L3___         ___nail_R3___
-    &lt BLE_LAYER ESC &lt NAV_LAYER SPACE          &lt NUM_LAYER E &sk LSHIFT
+                       ___nail_L1___                 ___nail_R1___
+                       ___nail_L2___                 ___nail_R2___
+                       ___nail_L3___                 ___nail_R3___
+    &lt NAV_LAYER ESC &lt UML_LAYER SPACE          &lt NUM_LAYER E &sk LSHIFT
                   >;
                 };
 
@@ -91,6 +91,15 @@
   &none  &none  &none  &none  &none      &kp LEFT &kp DOWN  &kp UP  &kp RIGHT  &none
   &none  &none  &none  &none  &none      &none    &none     &none   &none      &none
                         &none &none      &none  &kp BSPC
+                        >;
+                };
+
+       UML_LAYER {
+          bindings = <
+  &none  &none  &none  &none  &none      &none  &none             &kp deOE  &kp deUE &none
+  &none  &none  &none  &none  &none      &none  &kp deNUMBER_SS   &kp deAE  &none    &none
+  &none  &none  &none  &none  &none      &none  &none   &none     &none    &none
+                        &none &none      &none  &none
                         >;
                 };
 
