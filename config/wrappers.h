@@ -9,11 +9,11 @@
 */
 
 #define ___nail_L1___    &kp deSQT   &kp F        &kp C       &kp K         &kp deQUESTION
-#define ___nail_L2___    &hm LGUI R  &hm LCTRL S  &hm LALT T  &hm LSHIFT H  &kp D
+#define ___nail_L2___    &hm LGUI R  &hm LCTRL S  &hm LALT T  &hm LSHIFT H  &kp W
 #define ___nail_L3___    &kp X       &kp deY      &kp G       &kp M         &kp V
 
 #define ___nail_R1___    &kp deGRAVE  &kp B         &kp O       &kp U        &kp deZ
-#define ___nail_R2___    &kp W        &hm LSHIFT N  &hm LALT A  &hm LCTRL I  &hm LGUI L
+#define ___nail_R2___    &kp D        &hm LSHIFT N  &hm LALT A  &hm LCTRL I  &hm LGUI L
 #define ___nail_R3___    &kp Q        &kp P         &kp DOT     &kp COMMA    &kp J
 
 // other stuff than layouts 
