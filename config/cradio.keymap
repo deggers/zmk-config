@@ -86,6 +86,16 @@
                   >;
                 };
 
+       UML_LAYER {
+          bindings = <
+  &none  &none  &none  &none  &none      &none  &none             &kp deOE  &kp deUE &none
+  &none  &none  &none  &none  &none      &none  &kp deNUMBER_SS   &kp deAE  &none    &none
+  &none  &none  &none  &none  &none      &none  &none   &none     &none    &none
+                        &none &none      &none  &none
+                        >;
+                };
+
+
        NAV_LAYER {
           bindings = <
   &none  &none  &none  &none  &none      &none    &none     &none   &none      &none
@@ -95,14 +105,6 @@
                         >;
                 };
 
-       UML_LAYER {
-          bindings = <
-  &none  &none  &none  &none  &none      &none  &none             &kp deOE  &kp deUE &none
-  &none  &none  &none  &none  &none      &none  &kp deNUMBER_SS   &kp deAE  &none    &none
-  &none  &none  &none  &none  &none      &none  &none   &none     &none    &none
-                        &none &none      &none  &none
-                        >;
-                };
 
        NUM_LAYER {
           bindings = <
