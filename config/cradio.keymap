@@ -15,7 +15,7 @@
 #define UML_LAYER 1
 #define NAV_LAYER 2
 #define NUM_LAYER 3
-#define BLE_LAYER 5
+#define BLE_LAYER 4
 
 /*                KEY POSITIONS
 
