@@ -11,12 +11,6 @@
 
 #include "wrappers.h"
 
-#define BASE_LAYER 0
-#define UML_LAYER 1
-#define NAV_LAYER 2
-#define NUM_LAYER 3
-#define BLE_LAYER 4
-
 /*                KEY POSITIONS
 
   ╭────────────────────╮ ╭────────────────────╮
@@ -77,22 +71,23 @@
 
     keymap {
        compatible = "zmk,keymap";
+
+/*                ALPHA LAYER 
+
+  ╭────────────────────╮ ╭────────────────────╮
+  │  '   F   C   K   ? │ │  `   B   O   U   Z │
+  │  R   S   T   H   D │ │  W   N   A   I   L │
+  │  X   Y   G   M   V │ │  Q   P   .  ,    J │
+  ╰───────────╮    SPC │ │  E  33 ╭───────────╯
+              ╰────────╯ ╰────────╯            
+*/
        BASE_LAYER {
           bindings = <
-                       ___nail_L1___                 ___nail_R1___
-                       ___nail_L2___                 ___nail_R2___
-                       ___nail_L3___                 ___nail_R3___
-    &lt NAV_LAYER ESC &lt UML_LAYER SPACE          &lt NUM_LAYER E &sk LSHIFT
+  &kp deSQT   &kp F        &kp C       &kp K         &kp deQUESTION       &kp deGRAVE &kp B &kp O &kp U &kp deZ
+  &hm LGUI R  &hm LCTRL S  &hm LALT T  &hm LSHIFT H  &kp W                &kp D &hm LSHIFT N &hm LALT A &hm LCTRL I &hm LGUI L 
+  &kp X       &kp deY      &kp G       &kp M         &kp V                &kp Q &kp P &kp DOT &kp COMMA &kp J
+                           &lt FN_LAYER ESC  &lt NAV_LAYER SPACE         &lt NUM_LAYER E  &lt SYM_LAYER BSPC
                   >;
-                };
-
-       UML_LAYER {
-          bindings = <
-  &none  &none  &none  &none  &none      &none  &none             &kp deOE  &kp deUE &none
-  &none  &none  &none  &none  &none      &none  &kp deNUMBER_SS   &kp deAE  &none    &none
-  &none  &none  &none  &none  &none      &none  &none   &none     &none    &none
-                        &none &none      &sl BLE_LAYER  &none
-                        >;
                 };
 
 
@@ -104,23 +99,39 @@
                         &none &none      &none  &kp BSPC
                         >;
                 };
-
-
-       NUM_LAYER {
+*/
+   NUMBER LAYER
+  ╭────────────────────╮ ╭────────────────────╮
+  │  [   7   8   9   ] │ │ __  __   ö   ü  __ │
+  │  -   1   2   3   = │ │ __  __   ä  __   ß │
+  │  +   4   5   6   \ │ │ __  __  __  __  __ │
+  ╰───────────╮  _   0 │ │        ╭───────────╯
+              ╰────────╯ ╰────────╯            
+*/
+       NUM_UML_LAYER {
           bindings = <
-  &none  &kp N7  &kp N8  &kp N9  &none      &none    &none     &none   &none      &none
-  &none  &kp N1  &kp N2  &kp N3  &none      &kp RALT &kp DOT    &kp COMMA  &kp RALT   &kp RGUI
-  &none  &kp N4  &kp N5  &kp N6  &none      &none    &none     &none   &none      &none
-                          &none &kp N0      &none &none
+  &deLEFT_BRACKET  &kp N7  &kp N8  &kp N9  &deRIGHT_BRACKET      &none    &deOE  &deUE  &none   &none
+  &deSEMI          &kp N1  &kp N2  &kp N3  &deEQUAL              &kp RALT &deAE  &none  &none   &deNUMBER_SS
+  &deGRAVE         &kp N4  &kp N5  &kp N6  &deBACKSLASH          &none    &none  &none  &none   &none
+                                &deUNDERSCORE &kp N0             &none &none
                         >;
                 };
 
-      BLE_LAYER {
-         bindings = <
-                 ___BLE_L1___             ___NONE___
-                 ___BLE_L2___             ___NONE___
-                 ___BLE_L3___             ___NONE___
-                     &none &none     &none &none
+/*               SYMBOL LAYER 
+
+  ╭────────────────────╮ ╭────────────────────╮
+  │  {   (   )   }   ~ │ │ RST  6   7  BLE CLR│
+  │  <   &   %   "   : │ │ B0  B1  B2  B3  B4 │
+  │  >   !   @   #   | │ │ BTL 26  27  USB 29 │
+  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
+              ╰────────╯ ╰────────╯            
+*/
+       SYM_BLE_LAYER {
+          bindings = <
+  &deLEFT_BRACKET  &deLEFT_PARENTHESIS  &deRIGHT_PARENTHESIS  &deRIGHT_BRACKET      &deTILDE      &reset        &none         &none         &out OUT_BLE   &bt BT_CLR
+  &deLESS_THAN     &deAMPERSAND         &dePERCENT            &deDQT                &deCOLON      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4
+  &deGREATER_THAN  &deEXCLAMATION       &deAT_SIGN            &deHASH               &deBACKSLASH  &bootloader   &none         &none         &out OUT_USB   &none
+                                           &deUNDERSCORE &kp N0                        &none &none
                         >;
                 };
         };
