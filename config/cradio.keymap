@@ -86,7 +86,7 @@
   &kp deSQT   &kp F        &kp C       &kp K         &kp deQUESTION       &kp deGRAVE &kp B &kp O &kp U &kp deZ
   &hm LGUI R  &hm LCTRL S  &hm LALT T  &hm LSHIFT H  &kp W                &kp D &hm LSHIFT N &hm LALT A &hm LCTRL I &hm LGUI L 
   &kp X       &kp deY      &kp G       &kp M         &kp V                &kp Q &kp P &kp DOT &kp COMMA &kp J
-                           &lt FN_LAYER ESC  &lt NAV_LAYER SPACE         &lt NUM_LAYER E  &lt SYM_LAYER BSPC
+                           &kp ESC  &lt NAV_LAYER SPACE         &lt NUM_UML_LAYER E  &lt SYM_BLE_LAYER BSPC
                   >;
                 };
 
