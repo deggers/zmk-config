@@ -115,10 +115,10 @@
 */
        NUM_UML_LAYER {
           bindings = <
-  &deLEFT_BRACKET  &kp N7  &kp N8  &kp N9  &deRIGHT_BRACKET      &none    &deOE  &deUE  &none   &none
-  &deSEMI          &kp N1  &kp N2  &kp N3  &deEQUAL              &kp RALT &deAE  &none  &none   &deNUMBER_SS
-  &deGRAVE         &kp N4  &kp N5  &kp N6  &deBACKSLASH          &none    &none  &none  &none   &none
-                                &deUNDERSCORE &kp N0             &none &none
+  &kp deLEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp deRIGHT_BRACKET      &none    &kp deOE  &kp deUE  &none   &none
+  &kp deSEMI          &kp N1  &kp N2  &kp N3  &kp deEQUAL              &kp RALT &kp deAE  &none     &none   &kp deNUMBER_SS
+  &kp deGRAVE         &kp N4  &kp N5  &kp N6  &kp deBACKSLASH          &none    &none  &none  &none   &none
+                                &kp deUNDERSCORE &kp N0             &none &none
                         >;
                 };
 
@@ -133,10 +133,10 @@
 */
        SYM_BLE_LAYER {
           bindings = <
-  &deLEFT_BRACKET  &deLEFT_PARENTHESIS  &deRIGHT_PARENTHESIS  &deRIGHT_BRACKET      &deTILDE      &reset        &none         &none         &out OUT_BLE   &bt BT_CLR
-  &deLESS_THAN     &deAMPERSAND         &dePERCENT            &deDQT                &deCOLON      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4
-  &deGREATER_THAN  &deEXCLAMATION       &deAT_SIGN            &deHASH               &deBACKSLASH  &bootloader   &none         &none         &out OUT_USB   &none
-                                           &deUNDERSCORE &kp N0                        &none &none
+  &kp deLEFT_BRACKET  &kp deLEFT_PARENTHESIS  &kp deRIGHT_PARENTHESIS  &kp deRIGHT_BRACKET      &kp deTILDE      &reset        &none         &none         &out OUT_BLE   &bt BT_CLR
+  &kp deLESS_THAN     &kp deAMPERSAND         &kp dePERCENT            &kp deDQT                &kp deCOLON      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4
+  &dkp eGREATER_THAN  &kp deEXCLAMATION       &kp deAT_SIGN            &kp deHASH               &kp deBACKSLASH  &bootloader   &none         &none         &out OUT_USB   &none
+                                           &kp deUNDERSCORE &kp N0                        &none &none
                         >;
                 };
    };
