@@ -133,7 +133,7 @@
 */
        SYM_BLE_LAYER {
           bindings = <
-  &kp deLEFT_BRACKET  &kp deLEFT_PARENTHESIS  &kp deRIGHT_PARENTHESIS  &kp deRIGHT_BRACKET      &kp deTILDE      &reset        &none         &none         &out OUT_BLE   &bt BT_CLR
+  &kp deLEFT_BRACE    &kp deLEFT_PARENTHESIS  &kp deRIGHT_PARENTHESIS  &kp deRIGHT_BRACE        &kp deTILDE      &reset        &none         &none         &out OUT_BLE   &bt BT_CLR
   &kp deLESS_THAN     &kp deAMPERSAND         &kp dePERCENT            &kp deDQT                &kp deCOLON      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4
   &kp deGREATER_THAN  &kp deEXCLAMATION       &kp deAT_SIGN            &kp deHASH               &kp deBACKSLASH  &bootloader   &none         &none         &out OUT_USB   &none
                                            &kp deUNDERSCORE &kp N0                        &none &none
