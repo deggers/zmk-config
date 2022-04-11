@@ -57,7 +57,7 @@
         };
 
         combo_backspace {
-            timeout-ms = <25>;
+            timeout-ms = <75>;
             key-positions = <17 18>;
             bindings = <&kp BSPC>;
         };
@@ -82,7 +82,7 @@
 
   ╭────────────────────╮ ╭────────────────────╮
   │  /   F   C   K   ? │ │  -   B   O   U   Z │
-  │  R   S   T   H   V │ │  D   N   A   I   L │
+  │  R   S   T   H   D │ │  V   N   A   I   L │
   │  X   Y   G   M   Q │ │  W   P   .   ,   J │
   ╰───────────╮    SPC │ │  E   ← ╭───────────╯
               ╰────────╯ ╰────────╯            
@@ -90,7 +90,7 @@
        BASE_LAYER {
           bindings = <
 &kp deSLASH    &kp F        &kp C       &kp K         &kp deQUESTION       &kp deMINUS  &kp B        &kp O      &kp U       &kp deZ
-&hm LGUI R     &hm LCTRL S  &hm LALT T  &hm LSHIFT H  &kp V                &kp D        &hm LSHIFT N &hm LALT A &hm LCTRL I &hm LGUI L 
+&hm LGUI R     &hm LCTRL S  &hm LALT T  &hm LSHIFT H  &kp D                &kp V        &hm LSHIFT N &hm LALT A &hm LCTRL I &hm LGUI L 
 &kp X          &kp deY      &kp G       &kp M         &kp Q                &kp W        &kp P        &kp DOT    &kp COMMA   &kp J
                            &lt BLE_LAYER ESC  &lt NAV_LAYER SPACE         &lt NUM_UML_LAYER E  &lt SYM_LAYER BSPC
                   >;
