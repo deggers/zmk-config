@@ -116,8 +116,8 @@
 */
        NUM_UML_LAYER {
           bindings = <
-  &kp deLEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp deRIGHT_BRACKET      &none    &kp deOE  &kp deUE  &none   &none
-  &kp deSEMI          &kp N1  &kp N2  &kp N3  &kp deEQUAL              &kp RALT &kp deAE  &none     &none   &kp deNUMBER_SS
+  &kp deLEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp deRIGHT_BRACKET      &none &none &kp deOE  &kp deUE  &none
+  &kp deSEMI          &kp N1  &kp N2  &kp N3  &kp deEQUAL              &none &none &kp deAE  &none     &kp deNUMBER_SS
   &kp deGRAVE         &kp N4  &kp N5  &kp N6  &kp deBACKSLASH          &none    &none  &none  &none   &none
                                 &kp deUNDERSCORE &kp N0             &none &none
                         >;
