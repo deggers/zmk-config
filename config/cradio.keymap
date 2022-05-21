@@ -28,7 +28,7 @@
 #define BLE_LAYER 4
 
 &caps_word {
-   continue-list = <UNDERSCORE MINUS MOD_LSFT>; 
+   continue-list = <UNDERSCORE deMINUS MOD_LSFT>; 
 };
 
 / {
