@@ -81,7 +81,7 @@
 				tapping_term_ms = <125>;
 			        quick_tap_ms = <200>;
 			        global-quick-tap;
-				flavor = "balanced";
+				flavor = "tap-preferred";
 				bindings = <&kp>, <&kp>;
 			};
 		};
