@@ -71,6 +71,32 @@
             key-positions = <28 29>;
             bindings = <&caps_word>;
         };	
+	
+	combo_one_shot_ctrl_left {
+            timeout-ms = <75>;
+            key-positions = <2 3>;
+            bindings = <&sk LCTRL>;
+        };
+
+	combo_one_shot_ctrl_right {
+            timeout-ms = <75>;
+            key-positions = <6 7>;
+            bindings = <&sk LCTRL>;
+        };
+
+	combo_one_shot_alt_left {
+            timeout-ms = <75>;
+            key-positions = <1 2>;
+            bindings = <&sk LALT>;
+        };
+
+	combo_one_shot_alt_right {
+            timeout-ms = <75>;
+            key-positions = <7 8>;
+            bindings = <&sk LALT>;
+        };
+	
+
     };
 
     behaviors {        
@@ -84,33 +110,7 @@
 			flavor = "tap-preferred";
 			bindings = <&kp>, <&kp>;
 		};
-			
-		hl: homerow_mods_left {
-			compatible = "zmk,behavior-hold-tap";
-			label = "homerow mods left";
-			#binding-cells = <2>;
-			flavor = "tap-preferred";
-			tapping-term-ms = <100>;
-			quick-tap-ms = <200>;
-			global-quick-tap;
-			bindings = <&kp>, <&kp>;
-			// opposite side hand keys
-			hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32>;
-		};
-
-		hr: homerow_mods_right {
-			compatible = "zmk,behavior-hold-tap";
-			label = "homerow mods right";
-			#binding-cells = <2>;
-			flavor = "tap-preferred";
-			tapping-term-ms = <100>;
-			quick-tap-ms = <200>;
-			global-quick-tap;
-			bindings = <&kp>, <&kp>;
-			// opposite side hand keys
-			hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
-		};
-		};
+	};
  
 
 
@@ -128,10 +128,10 @@
 */
        BASE_LAYER {
           bindings = <
-&kp deSLASH    &kp F        &kp C       &kp K         &kp deQUESTION       &kp deMINUS  &kp B        &kp O      &kp U       &kp deZ
-&hl LGUI R     &hl LCTRL S  &hl LALT T  &hl LSHIFT H  &kp D                &kp V        &hr LSHIFT N &hr LALT A &hr LCTRL I &hr LGUI L 
-&kp X          &kp deY      &kp G       &kp M         &kp Q                &kp W        &kp P        &kp DOT    &kp COMMA   &kp J
-                           &lt BLE_LAYER ESC  &lt NAV_LAYER SPACE         &lt NUM_UML_LAYER E  &lt SYM_LAYER LSHFT
+&kp deSLASH   &kp F    &kp C  &kp K         &kp deQUESTION          &kp deMINUS  &kp B        &kp O    &kp U      &kp deZ
+&kp R         &kp S    &kp T  &hm LSHIFT H  &kp D                   &kp V        &hm LSHIFT N &kp A    &kp I      &kp  L 
+&kp X         &kp deY  &kp G  &kp M         &kp Q                   &kp W        &kp P        &kp DOT  &kp COMMA  &kp J
+                     &lt BLE_LAYER ESC  &lt NAV_LAYER SPACE         &lt NUM_UML_LAYER E  &lt SYM_LAYER LSHFT
                   >;
                 };
 
