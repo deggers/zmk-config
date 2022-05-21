@@ -27,6 +27,10 @@
 #define SYM_LAYER 3
 #define BLE_LAYER 4
 
+&caps_word {
+   continue-list = <UNDERSCORE MINUS>;
+};
+
 / {
 
     combos {
@@ -80,10 +84,7 @@
 				bindings = <&kp>, <&kp>;
 			};
 		};
-   
-   &caps_word {
-    	continue-list = <UNDERSCORE MINUS>;
-    };
+ 
 
 
     keymap {
