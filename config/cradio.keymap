@@ -126,6 +126,12 @@
             bindings = <&caps_word>;
         };	
 
+	combo_underscore_right {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp deUNDERSCORE>;
+        };
+
 	combo_one_shot_ctrl_right {
             timeout-ms = <50>;
             key-positions = <6 7>;
@@ -145,7 +151,7 @@
         };
 	
         combo_bleLayer {
-            timeout-ms = <50>;
+            timeout-ms = <125>;
             key-positions = <30 31>;
             bindings = <&mo BLE_LAYER>;
         };
