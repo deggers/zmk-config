@@ -36,67 +36,120 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <75>;
-            key-positions = <12 13>;
-            bindings = <&kp ESC>;
+	combo_one_shot_gui_left {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&sk LGUI>;
+        };
+
+	combo_one_shot_alt_left {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&sk LALT>;
+        };
+
+	combo_one_shot_ctrl_left {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&sk LCTRL>;
         };
 
         combo_tab {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp TAB>;
         };
+	
+	combo_esc {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp ESC>;
+        };
+	
+	combo_equals {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp deEQUAL>;
+        };
 
+        combo_lBracket {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp deLEFT_BRACKET>;
+        };
+
+        combo_lBrace {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp deLEFT_BRACE>;
+        };
+ 
+        combo_lParan {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp deLEFT_PARENTHESIS>;
+        };
+	
+        combo_less_than {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp deLESS_THAN>;
+        };
+	
+ 	combo_grave {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp deGRAVE>;
+        };
+ 
         combo_enter {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp RET>;
         };
-
+ 
         combo_ctrl_backspace {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <16 17 18>;
             bindings = <&kp LC(BSPC)>;
         };
 
         combo_backspace {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp BSPC>;
         };
 	
         combo_caps_word {
-            timeout-ms = <75>;
-            key-positions = <28 29>;
+            timeout-ms = <50>;
+            key-positions = <13 16>;
             bindings = <&caps_word>;
         };	
-	
-	combo_one_shot_ctrl_left {
-            timeout-ms = <75>;
-            key-positions = <2 3>;
-            bindings = <&sk LCTRL>;
-        };
 
 	combo_one_shot_ctrl_right {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <6 7>;
             bindings = <&sk LCTRL>;
         };
 
-	combo_one_shot_alt_left {
-            timeout-ms = <75>;
-            key-positions = <1 2>;
-            bindings = <&sk LALT>;
-        };
-
 	combo_one_shot_alt_right {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <7 8>;
             bindings = <&sk LALT>;
         };
 	
-
+	combo_one_shot_gui_right {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&sk LGUI>;
+        };
+	
+        combo_bleLayer {
+            timeout-ms = <50>;
+            key-positions = <30 31>;
+            bindings = <&mo BLE_LAYER>;
+        };
+	
     };
 
     behaviors {        
