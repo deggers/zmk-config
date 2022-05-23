@@ -169,6 +169,18 @@
 			flavor = "tap-preferred";
 			bindings = <&kp>, <&kp>;
 		};
+		
+		gqt: global-quick-tap {
+		    compatible = "zmk,behavior-hold-tap";
+		    label = "GLOBAL_QUICK_TAP";
+		    #binding-cells = <2>;
+		    flavor = "tap-preferred";
+		    tapping-term-ms = <125>;
+		    quick-tap-ms = <75>;
+		    global-quick-tap;
+		    retro-tap;
+		    bindings = <&kp>, <&kp>;
+		};
 	};
  
 
@@ -187,9 +199,9 @@
 */
        BASE_LAYER {
           bindings = <
-&kp deSLASH   &kp F    &kp C  &kp K         &kp deQUESTION          &kp deMINUS  &kp B        &kp O    &kp U      &kp deZ
-&hm LGUI R         &kp S    &kp T  &hm LSHIFT H  &kp D                   &kp V        &hm LSHIFT N &kp A    &kp I      &hm LGUI L 
-&kp X         &kp deY  &kp G  &kp M         &kp Q                   &kp W        &kp P        &kp DOT  &kp COMMA  &kp J
+&kp deSLASH   &kp F    &kp C  &kp K         &kp deQUESTION                &kp deMINUS  &kp B        &kp O           &kp U      &kp deZ
+&gqt LGUI R         &gqt LALT S    &gqt LCTRL T  &hm LSHIFT H  &kp D      &kp V        &hm LSHIFT N &gqt LCTRL A    &gqt LALT I      &gqt LGUI L 
+&kp X         &kp deY  &kp G  &kp M         &kp Q                          &kp W        &kp P        &kp DOT        &kp COMMA  &kp J
                      &lt BLE_LAYER ESC  &lt NAV_LAYER SPACE         &lt NUM_UML_LAYER E  &lt SYM_LAYER LSHFT
                   >;
                 };
