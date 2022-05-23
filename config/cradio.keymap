@@ -188,7 +188,7 @@
        BASE_LAYER {
           bindings = <
 &kp deSLASH   &kp F    &kp C  &kp K         &kp deQUESTION          &kp deMINUS  &kp B        &kp O    &kp U      &kp deZ
-&kp R         &kp S    &kp T  &hm LSHIFT H  &kp D                   &kp V        &hm LSHIFT N &kp A    &kp I      &kp  L 
+&hm LGUI R         &kp S    &kp T  &hm LSHIFT H  &kp D                   &kp V        &hm LSHIFT N &kp A    &kp I      &hm LGUI L 
 &kp X         &kp deY  &kp G  &kp M         &kp Q                   &kp W        &kp P        &kp DOT  &kp COMMA  &kp J
                      &lt BLE_LAYER ESC  &lt NAV_LAYER SPACE         &lt NUM_UML_LAYER E  &lt SYM_LAYER LSHFT
                   >;
