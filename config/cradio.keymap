@@ -206,18 +206,18 @@
 /*
    NUMBER LAYER
   ╭────────────────────╮ ╭────────────────────╮
-  │  [   7   8   9   ] │ │ __  __   ö   ü  __ │
-  │  -   1   2   3   = │ │ __  __   ä  __   ß │
-  │  +   4   5   6   \ │ │ __  __  __  __  __ │
-  ╰───────────╮  _   0 │ │      ⇧ ╭───────────╯
+  │      9   8   7     │ │ __  __   ö   ü  __ │
+  │      3   2   1     │ │ __  __   ä  __   ß │
+  │      6   5   4     │ │ __  __  __  __  __ │
+  ╰───────────╮  _   0 │ │        ╭───────────╯
               ╰────────╯ ╰────────╯            
 */
        NUM_UML_LAYER {
           bindings = <
-  &kp deLEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp deRIGHT_BRACKET      &none &none &kp deOE  &kp deUE  &none
-  &kp deSEMI          &kp N1  &kp N2  &kp N3  &kp deEQUAL              &none &none &kp deAE  &none     &kp deNUMBER_SS
-  &kp deGRAVE         &kp N4  &kp N5  &kp N6  &kp deBACKSLASH          &none    &none  &none  &none   &none
-                                &kp deUNDERSCORE &kp N0             &none &none
+  &none  &kp N9  &kp N8  &kp N7  &none      &none  &none  &kp deOE  &kp deUE  &none
+  &none  &kp N3  &kp N2  &kp N1  &none      &none  &none  &kp deAE  &none     &kp deNUMBER_SS
+  &none  &kp N6  &kp N5  &kp N4  &none      &none  &none  &none     &none      &none
+               &kp deUNDERSCORE &kp N0      &none &none
                         >;
                 };
 
