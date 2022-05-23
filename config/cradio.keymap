@@ -159,11 +159,22 @@
     };
 
     behaviors {        
-		hm: homerow_mods {
+		hm_shift: homerow_mods {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOMEROW_MODS";
 			#binding-cells = <2>;
 			tapping_term_ms = <125>;
+			quick_tap_ms = <200>;
+			global-quick-tap;
+			flavor = "tap-preferred";
+			bindings = <&kp>, <&kp>;
+		};
+		
+		hm_gui: homerow_mods {
+			compatible = "zmk,behavior-hold-tap";
+			label = "HOMEROW_MODS";
+			#binding-cells = <2>;
+			tapping_term_ms = <175>;
 			quick_tap_ms = <200>;
 			global-quick-tap;
 			flavor = "tap-preferred";
@@ -200,7 +211,7 @@
        BASE_LAYER {
           bindings = <
 &kp deSLASH   &kp F    &kp C  &kp K         &kp deQUESTION                &kp deMINUS  &kp B        &kp O           &kp U      &kp deZ
-&gqt LGUI R         &gqt LALT S    &gqt LCTRL T  &hm LSHIFT H  &kp D      &kp V        &hm LSHIFT N &gqt LCTRL A    &gqt LALT I      &gqt LGUI L 
+&hm_gui LGUI R         &gqt LALT S    &gqt LCTRL T  &hm_shift LSHIFT H    &kp D      &kp V        &hm_shift LSHIFT N &gqt LCTRL A    &gqt LALT I      &hm_gui LGUI L 
 &kp X         &kp deY  &kp G  &kp M         &kp Q                          &kp W        &kp P        &kp DOT        &kp COMMA  &kp J
                      &lt BLE_LAYER ESC  &lt NAV_LAYER SPACE         &lt NUM_UML_LAYER E  &lt SYM_LAYER LSHFT
                   >;
