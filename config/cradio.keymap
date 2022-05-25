@@ -198,7 +198,7 @@
 		    label = "MOD_MORPH";
 		    #binding-cells = <0>;
 		    bindings = <&lt BLE_LAYER ESC>, <&kp TAB>;
-		    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+		    mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTRL)>;
 		};
 	};
  
