@@ -156,14 +156,6 @@
             bindings = <&mo BLE_LAYER>;
         };
 	
-	 morph_tab: morph_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MOD_MORPH";
-            #binding-cells = <0>;
-            bindings = <&lt BLE_LAYER ESC>, <&kp TAB>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-        };
-	
     };
 
     behaviors {        
@@ -199,6 +191,14 @@
 		    global-quick-tap;
 		    retro-tap;
 		    bindings = <&kp>, <&kp>;
+		};
+		
+		morph_tab: morph_tab {
+		    compatible = "zmk,behavior-mod-morph";
+		    label = "MOD_MORPH";
+		    #binding-cells = <0>;
+		    bindings = <&lt BLE_LAYER ESC>, <&kp TAB>;
+		    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
 		};
 	};
  
