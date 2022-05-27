@@ -133,15 +133,9 @@
             bindings = <&kp BSPC>;
         };
 	
-        combo_shift_shift {
-            timeout-ms = <50>;
-            key-positions = <13 16>;
-            bindings = <&shift_shift>;
-        };	
-	
 	combo_caps_word {
             timeout-ms = <50>;
-            key-positions = <28 29>;
+            key-positions = <13 16>;
             bindings = <&caps_word>;
         };	
 
