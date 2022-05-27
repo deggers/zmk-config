@@ -33,6 +33,19 @@
 
 / {
 
+    macros {
+        shift_shift: shift_shift {
+            label = "double_shift";
+            compatible = "zmk,behavior-macro";
+	    #binding-cells = <0>;
+            wait-ms = <40>;
+	    tap-ms = <40>;
+	    bindings
+	    = <&kp LSHIFT &kp LSHIFT>
+	    ;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -120,9 +133,15 @@
             bindings = <&kp BSPC>;
         };
 	
-        combo_caps_word {
+        combo_shift_shift {
             timeout-ms = <50>;
             key-positions = <13 16>;
+            bindings = <&shift_shift>;
+        };	
+	
+	combo_caps_word {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
             bindings = <&caps_word>;
         };	
 
@@ -157,19 +176,7 @@
         };
 	
     };
-    
-    macros {
-        shift_shift: shift_shift {
-            label = "double_shift";
-            compatible = "zmk,behavior-macro";
-	    #binding-cells = <0>;
-            wait-ms = <40>;
-	    tap-ms = <40>;
-	    bindings
-	    = <&kp LSHIFT &kp LSHIFT>
-	    ;
-        };
-    };
+   
     
     behaviors {        
 		hm_shift: homerow_mods {
