@@ -160,8 +160,9 @@
     
     macros {
         shift_shift: shift_shift {
-            label = "double_shift	";
+            label = "double_shift";
             compatible = "zmk,behavior-macro";
+	    #binding-cells = <0>;
             wait-ms = <40>;
 	    tap-ms = <40>;
 	    bindings
