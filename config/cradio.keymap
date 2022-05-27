@@ -157,7 +157,19 @@
         };
 	
     };
-
+    
+    macros {
+        shift_shift: shift_shift {
+            label = "double_shift	";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+	    tap-ms = <40>;
+	    bindings
+	    = <&kp LSHIFT &kp LHIFT>
+	    ;
+        };
+    };
+    
     behaviors {        
 		hm_shift: homerow_mods {
 			compatible = "zmk,behavior-hold-tap";
@@ -200,6 +212,14 @@
 		    bindings = <&lt BLE_LAYER ESC>, <&kp TAB>;
 		    mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
 		};
+
+		td_shift_shift: tap_dance_0 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_0";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <50>;
+		    bindings = <&hm_shift LSHIFT H>, <&shift_shift>;
+		};
 	};
  
 
@@ -219,7 +239,7 @@
        BASE_LAYER {
           bindings = <
 &kp deSLASH   &kp F    &kp C  &kp K         &kp deQUESTION                &kp deMINUS  &kp B        &kp O           &kp U      &kp deZ
-&hm_gui LGUI R         &gqt LALT S    &gqt LCTRL T  &hm_shift LSHIFT H    &kp D      &kp V        &hm_shift LSHIFT N &gqt LCTRL A    &gqt LALT I      &hm_gui LGUI L 
+&hm_gui LGUI R         &gqt LALT S    &gqt LCTRL T  &td_shift_shift    &kp D      &kp V        &hm_shift LSHIFT N &gqt LCTRL A    &gqt LALT I      &hm_gui LGUI L 
 &kp X         &kp deY  &kp G  &kp M         &kp Q                          &kp W        &kp P        &kp DOT        &kp COMMA  &kp J
                      &morph_tab  &lt NAV_LAYER SPACE         &lt NUM_UML_LAYER E  &lt SYM_LAYER LC(BSPC)
                   >;
