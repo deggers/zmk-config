@@ -44,6 +44,18 @@
 	    = <&kp LSHIFT &kp LSHIFT>
 	    ;
         };
+	
+	lambda_arrow: lambda_arrow {
+            label = "lambda_arrow";
+            compatible = "zmk,behavior-macro";
+	    #binding-cells = <0>;
+            wait-ms = <10>;
+	    tap-ms = <10>;
+	    bindings
+	    = <&kp deMINUS &kp deGREATER_THAN>
+	    ;
+        };
+	
     };
 
     combos {
@@ -102,6 +114,13 @@
             key-positions = <22 23>;
             bindings = <&kp deLEFT_PARENTHESIS>;
         };
+
+        combo_arrow {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&lambda_arrow>;
+        };
+	
 	
         combo_less_than {
             timeout-ms = <50>;
