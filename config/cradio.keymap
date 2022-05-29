@@ -88,7 +88,7 @@
         combo_del {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <DEL>;
+            bindings = <&kp DEL>;
         };
 
         combo_tab {
