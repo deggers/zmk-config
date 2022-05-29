@@ -205,7 +205,7 @@
 		hm_gui: homerow_mods {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOMEROW_MODS";
-			#binding-cells = <2>;deSQT
+			#binding-cells = <2>;
 			tapping_term_ms = <175>;
 			quick_tap_ms = <200>;
 			global-quick-tap;
