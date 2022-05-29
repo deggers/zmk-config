@@ -85,6 +85,12 @@
             bindings = <&lambda_arrow>;
         };
 
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <DEL>;
+        };
+
         combo_tab {
             timeout-ms = <50>;
             key-positions = <11 12>;
