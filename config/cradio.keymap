@@ -205,7 +205,7 @@
 		hm_gui: homerow_mods {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOMEROW_MODS";
-			#binding-cells = <2>;
+			#binding-cells = <2>;deSQT
 			tapping_term_ms = <175>;
 			quick_tap_ms = <200>;
 			global-quick-tap;
@@ -243,7 +243,7 @@
 /*                ALPHA LAYER 
 
   ╭────────────────────╮ ╭────────────────────╮
-  │  /   F   C   K   ? │ │  -   B   O   U   Z │
+  │  /   F   C   K   ? │ │  '   B   O   U   Z │
   │  R   S   T   H   D │ │  V   N   A   I   L │
   │  X   Y   G   M   Q │ │  W   P   .   ,   J │
   ╰───────────╮    SPC │ │  E   ⇧ ╭───────────╯
@@ -251,7 +251,7 @@
 */
        BASE_LAYER {
           bindings = <
-&kp deSLASH   &kp F    &kp C  &kp K         &kp deQUESTION                &kp deMINUS  &kp B        &kp O           &kp U      &kp deZ
+&kp deSLASH   &kp F    &kp C  &kp K         &kp deQUESTION                &kp deSQT  &kp B        &kp O           &kp U      &kp deZ
 &hm_gui LGUI R         &gqt LALT S    &gqt LCTRL T  &hm_shift LSHIFT H    &kp D      &kp V        &hm_shift LSHIFT N &gqt LCTRL A    &gqt LALT I      &hm_gui LGUI L 
 &kp X         &kp deY  &kp G  &kp M         &kp Q                          &kp W        &kp P        &kp DOT        &kp COMMA  &kp J
                      &morph_tab  &lt NAV_LAYER SPACE         &lt NUM_UML_LAYER E  &lt SYM_LAYER LC(BSPC)
