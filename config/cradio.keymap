@@ -218,17 +218,17 @@
 /*
    NUMBER LAYER
   ╭────────────────────╮ ╭────────────────────╮
-  │  *   9   8   7   - │ │ __  __   ö   ü  __ │
+  │  *   9   8   7   | │ │ __  __   ö   ü  __ │
   │  &   3   2   1   + │ │ __  __   ä  __   ß │
-  │  $   6   5   4   | │ │ __  __  __  __  __ │
+  │  $   6   5   4   - │ │ __  __  __  __  __ │
   ╰───────────╮  _   0 │ │        ╭───────────╯
               ╰────────╯ ╰────────╯            
 */
        NUM_UML_LAYER {
           bindings = <
-  &none  &kp N9  &kp N8  &kp N7  &kp MINUS          &none  &none  &kp RA(P)  &kp RA(Y)  &none
+  &none  &kp N9  &kp N8  &kp N7  &kp PIPE2          &none  &none  &kp RA(P)  &kp RA(Y)  &none
   &none  &kp N3  &kp N2  &kp N1  &kp PLUS      &none  &none  &kp RA(Q)  &none     &kp RA(S)
-  &none  &kp N6  &kp N5  &kp N4  &kp PIPE2          &none  &none  &none     &none      &none
+  &none  &kp N6  &kp N5  &kp N4  &kp MINUS          &none  &none  &none     &none      &none
                &kp UNDER &kp N0          &none &none
                         >;
                 };
