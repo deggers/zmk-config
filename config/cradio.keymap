@@ -28,23 +28,13 @@
 #define BLE_LAYER 4
 
 &caps_word {
-   continue-list = <LSHIFT deUNDERSCORE deMINUS BSPC>; 
+   continue-list = <LSHIFT UNDERSCORE MINUS BSPC>; 
 };
 
 / {
 
     macros {
-        shift_shift: shift_shift {
-            label = "double_shift";
-            compatible = "zmk,behavior-macro";
-	    #binding-cells = <0>;
-            wait-ms = <40>;
-	    tap-ms = <40>;
-	    bindings
-	    = <&kp LSHIFT &kp LSHIFT>
-	    ;
-        };
-	
+
 	lambda_arrow: lambda_arrow {
             label = "lambda_arrow";
             compatible = "zmk,behavior-macro";
@@ -52,32 +42,14 @@
             wait-ms = <10>;
 	    tap-ms = <10>;
 	    bindings
-	    = <&kp deMINUS &kp deGREATER_THAN>
+	    = <&kp MINUS &kp GREATER_THAN>
 	    ;
         };
 	
     };
 
     combos {
-        compatible = "zmk,combos";
-
-	combo_one_shot_gui_left {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&sk LGUI>;
-        };
-
-	combo_one_shot_alt_left {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&sk LALT>;
-        };
-
-	combo_one_shot_ctrl_left {
-            timeout-ms = <50>;
-            key-positions = <2 3>;
-            bindings = <&sk LCTRL>;
-        };
+        compatible = "zmk,combos"; 
 
         combo_arrow {
             timeout-ms = <50>;
@@ -106,37 +78,31 @@
 	combo_equals {
             timeout-ms = <50>;
             key-positions = <13 14>;
-            bindings = <&kp deEQUAL>;
+            bindings = <&kp EQUAL>;
         };
 
         combo_lBracket {
             timeout-ms = <50>;
             key-positions = <20 21>;
-            bindings = <&kp deLEFT_BRACKET>;
+            bindings = <&kp LEFT_BRACKET>;
         };
 
         combo_lBrace {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            bindings = <&kp deLEFT_BRACE>;
+            bindings = <&kp LEFT_BRACE>;
         };
  
         combo_lParan {
             timeout-ms = <50>;
             key-positions = <22 23>;
-            bindings = <&kp deLEFT_PARENTHESIS>;
-        };
-	
-        combo_less_than {
-            timeout-ms = <50>;
-            key-positions = <23 24>;
-            bindings = <&kp deLESS_THAN>;
+            bindings = <&kp LEFT_PARENTHESIS>;
         };
 	
  	combo_grave {
             timeout-ms = <50>;
             key-positions = <15 16>;
-            bindings = <&kp deGRAVE>;
+            bindings = <&kp GRAVE>;
         };
  
         combo_enter {
@@ -162,30 +128,6 @@
             key-positions = <13 16>;
             bindings = <&caps_word>;
         };	
-
-	combo_underscore_right {
-            timeout-ms = <50>;
-            key-positions = <5 6>;
-            bindings = <&kp deUNDERSCORE>;
-        };
-
-	combo_one_shot_ctrl_right {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-            bindings = <&sk LCTRL>;
-        };
-
-	combo_one_shot_alt_right {
-            timeout-ms = <50>;
-            key-positions = <7 8>;
-            bindings = <&sk LALT>;
-        };
-	
-	combo_one_shot_gui_right {
-            timeout-ms = <50>;
-            key-positions = <8 9>;
-            bindings = <&sk LGUI>;
-        };
 	
         combo_bleLayer {
             timeout-ms = <125>;
@@ -249,7 +191,7 @@
 /*                ALPHA LAYER 
 
   ╭────────────────────╮ ╭────────────────────╮ 
-  │  Q   F   C   K   ? │ │  '   B   O   U   Z │
+  │  Q   F   C   K   / │ │  '   B   O   U   Z │
   │  R   S   T   H   D │ │  V   N   A   I   L │
   │  X   Y   G   M   ⮔ │ │  W   P   .   ,   J │
   ╰───────────╮    SPC │ │  E   ⇧ ╭───────────╯
@@ -257,9 +199,9 @@
 */
        BASE_LAYER {
           bindings = <
-&kp Q           &kp F        &kp C         &kp K               &kp deQUESTION        &kp deSQT  &kp B               &kp O         &kp U        &kp deZ
+&kp Q           &kp F        &kp C         &kp K               &kp SLASH             &kp APOS  &kp B               &kp O         &kp U        &kp Z
 &hm_gui LGUI R  &gqt LALT S  &gqt LCTRL T  &hm_shift LSHIFT H  &kp D                 &kp V      &hm_shift LSHIFT N  &gqt LCTRL A  &gqt LALT I  &hm_gui LGUI L 
-&kp X           &kp deY      &kp G         &kp M               &key_repeat        &kp W      &kp P               &kp DOT       &kp COMMA    &kp J
+&kp X           &kp Y      &kp G         &kp M               &key_repeat             &kp W      &kp P               &kp DOT       &kp COMMA    &kp J
                                              &morph_tab  &lt NAV_LAYER SPACE         &lt NUM_UML_LAYER E  &lt SYM_LAYER LC(BSPC)
                   >;
                 };
@@ -276,18 +218,18 @@
 /*
    NUMBER LAYER
   ╭────────────────────╮ ╭────────────────────╮
-  │      9   8   7     │ │ __  __   ö   ü  __ │
-  │      3   2   1     │ │ __  __   ä  __   ß │
-  │      6   5   4     │ │ __  __  __  __  __ │
+  │  *   9   8   7   - │ │ __  __   ö   ü  __ │
+  │  &   3   2   1   + │ │ __  __   ä  __   ß │
+  │  $   6   5   4   | │ │ __  __  __  __  __ │
   ╰───────────╮  _   0 │ │        ╭───────────╯
               ╰────────╯ ╰────────╯            
 */
        NUM_UML_LAYER {
           bindings = <
-  &none  &kp N9  &kp N8  &kp N7  &none      &none  &none  &kp deOE  &kp deUE  &none
-  &none  &kp N3  &kp N2  &kp N1  &none      &none  &none  &kp deAE  &none     &kp deNUMBER_SS
-  &none  &kp N6  &kp N5  &kp N4  &none      &none  &none  &none     &none      &none
-               &kp deUNDERSCORE &kp N0      &none &none
+  &none  &kp N9  &kp N8  &kp N7  &kp MINUS          &none  &none  &kp RA(P)  &kp RA(Y)  &none
+  &none  &kp N3  &kp N2  &kp N1  &kp PLUS      &none  &none  &kp RA(Q)  &none     &kp RA(S)
+  &none  &kp N6  &kp N5  &kp N4  &kp PIPE2          &none  &none  &none     &none      &none
+               &kp UNDER &kp N0          &none &none
                         >;
                 };
 
