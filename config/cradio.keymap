@@ -51,10 +51,34 @@
     combos {
         compatible = "zmk,combos"; 
 
+        combo_lPar {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp LPAR>;
+        };
+
+        combo_lBrace {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp LEFT_BRACE>;
+        };
+
         combo_arrow {
             timeout-ms = <50>;
             key-positions = <3 4>;
             bindings = <&lambda_arrow>;
+        };
+
+        combo_rBrace {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&kp RIGHT_BRACE>;
+        };
+	
+        combo_rPar {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp RIGHT_BRACE>;
         };
 
         combo_del {
@@ -79,24 +103,6 @@
             timeout-ms = <50>;
             key-positions = <13 14>;
             bindings = <&kp EQUAL>;
-        };
-
-        combo_lBracket {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&kp LEFT_BRACKET>;
-        };
-
-        combo_lBrace {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp LEFT_BRACE>;
-        };
- 
-        combo_lParan {
-            timeout-ms = <50>;
-            key-positions = <22 23>;
-            bindings = <&kp LEFT_PARENTHESIS>;
         };
 	
  	combo_grave {
@@ -177,7 +183,7 @@
 		    compatible = "zmk,behavior-mod-morph";
 		    label = "MOD_MORPH";
 		    #binding-cells = <0>;
-		    bindings = <&lt BLE_LAYER ESC>, <&kp TAB>;
+		    bindings = <&lt BLE_LAYER key_repeat>, <&kp TAB>;
 		    mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
 		};
 
@@ -193,7 +199,7 @@
   ╭────────────────────╮ ╭────────────────────╮ 
   │  Q   F   C   K   / │ │  '   B   O   U   Z │
   │  R   S   T   H   D │ │  V   N   A   I   L │
-  │  X   Y   G   M   ⮔ │ │  W   P   .   ,   J │
+  │  X   Y   G   M   : │ │  W   P   .   ,   J │
   ╰───────────╮    SPC │ │  E   ⇧ ╭───────────╯
               ╰────────╯ ╰────────╯            
 */
@@ -201,7 +207,7 @@
           bindings = <
 &kp Q           &kp F        &kp C         &kp K               &kp SLASH             &kp APOS  &kp B               &kp O         &kp U        &kp Z
 &hm_gui LGUI R  &gqt LALT S  &gqt LCTRL T  &hm_shift LSHIFT H  &kp D                 &kp V      &hm_shift LSHIFT N  &gqt LCTRL A  &gqt LALT I  &hm_gui LGUI L 
-&kp X           &kp Y      &kp G         &kp M               &key_repeat             &kp W      &kp P               &kp DOT       &kp COMMA    &kp J
+&kp X           &kp Y      &kp G         &kp M               &kp SEMI             &kp W      &kp P               &kp DOT       &kp COMMA    &kp J
                                              &morph_tab  &lt NAV_LAYER SPACE         &lt NUM_UML_LAYER E  &lt SYM_LAYER LC(BSPC)
                   >;
                 };
@@ -226,9 +232,9 @@
 */
        NUM_UML_LAYER {
           bindings = <
-  &none  &kp N9  &kp N8  &kp N7  &kp PIPE2          &none  &none  &kp RA(P)  &kp RA(Y)  &none
-  &none  &kp N3  &kp N2  &kp N1  &kp PLUS      &none  &none  &kp RA(Q)  &none     &kp RA(S)
-  &none  &kp N6  &kp N5  &kp N4  &kp MINUS          &none  &none  &none     &none      &none
+  &kp STAR  &kp N9  &kp N8  &kp N7  &kp PIPE2          &none  &none  &kp RA(P)  &kp RA(Y)  &none
+  &kp AMPS  &kp N3  &kp N2  &kp N1  &kp PLUS      &none  &none  &kp RA(Q)  &none     &kp RA(S)
+  &kp DOLLAR &kp N6  &kp N5  &kp N4  &kp MINUS          &none  &none  &none     &none      &none
                &kp UNDER &kp N0          &none &none
                         >;
                 };
