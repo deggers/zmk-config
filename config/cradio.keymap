@@ -197,18 +197,18 @@
 /*                ALPHA LAYER 
 
   ╭────────────────────╮ ╭────────────────────╮ 
-  │  Q   F   C   K   / │ │  '   B   O   U   Z │
+  │  Q   F   C   K   - │ │  '   B   O   U   Z │
   │  R   S   T   H   D │ │  V   N   A   I   L │
-  │  X   Y   G   M   : │ │  W   P   .   ,   J │
+  │  X   Y   G   M   ; │ │  W   P   .   ,   J │
   ╰───────────╮    SPC │ │  E   ⇧ ╭───────────╯
               ╰────────╯ ╰────────╯            
 */
        BASE_LAYER {
           bindings = <
-&kp Q           &kp F        &kp C         &kp K               &kp SLASH             &kp APOS  &kp B               &kp O         &kp U        &kp Z
+&kp Q           &kp F        &kp C         &kp K               &kp MINUS             &kp APOS  &kp B               &kp O         &kp U        &kp Z
 &hm_gui LGUI R  &gqt LALT S  &gqt LCTRL T  &hm_shift LSHIFT H  &kp D                 &kp V      &hm_shift LSHIFT N  &gqt LCTRL A  &gqt LALT I  &hm_gui LGUI L 
 &kp X           &kp Y      &kp G         &kp M               &kp SEMI             &kp W      &kp P               &kp DOT       &kp COMMA    &kp J
-                                      &lt BLE_LAYER repeat_key  &morph_tab         &lt NUM_UML_LAYER E  &lt SYM_LAYER LC(BSPC)
+                                      &lt BLE_LAYER key_repeat  &morph_tab         &lt NUM_UML_LAYER E  &lt SYM_LAYER LC(BSPC)
                   >;
                 };
 
