@@ -183,7 +183,7 @@
 		    compatible = "zmk,behavior-mod-morph";
 		    label = "MOD_MORPH";
 		    #binding-cells = <0>;
-		    bindings = <&lt NAV_LAYER &kp SPC>, <&kp TAB>;
+		    bindings = <&lt NAV_LAYER SPC>, <&kp TAB>;
 		    mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
 		};
 
