@@ -134,6 +134,30 @@
             key-positions = <13 16>;
             bindings = <&caps_word>;
         };	
+
+        combo_cut {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <LC(X)>;
+        };
+
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <LC(C)>;
+        };
+	
+        combo_paste {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <LC(V)>;
+        };
+	
+        combo_slash {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp SLASH>;
+        };
 	
         combo_bleLayer {
             timeout-ms = <125>;
