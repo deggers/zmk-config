@@ -138,19 +138,19 @@
         combo_cut {
             timeout-ms = <50>;
             key-positions = <20 21>;
-            bindings = <LC(X)>;
+            bindings = <&kp K_CUT>;
         };
 
         combo_copy {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            bindings = <LC(C)>;
+            bindings = <&kp K_COPY>;
         };
 	
         combo_paste {
             timeout-ms = <50>;
             key-positions = <22 23>;
-            bindings = <LC(V)>;
+            bindings = <&kp K_PASTE>;
         };
 	
         combo_slash {
