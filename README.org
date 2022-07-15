@@ -1,5 +1,12 @@
 * My layout is here
-
+#+BEGIN_SRC
+  ╭────────────────────╮ ╭────────────────────╮ 
+  │  Q   F   C   K   B │ │  '   W   O   U   Z │
+  │  R   S   T   H   D │ │  V   N   A   I   L │
+  │  X   Y   G   P   ; │ │  -   M   .   ,   J │
+  ╰───────────╮    SPC │ │  E   ⇧ ╭───────────╯
+              ╰────────╯ ╰────────╯     
+#+END_SRC   
 ** What do I particularly like
 ~ght~ as in ~g~ followed by inward-roll ~ht~.
 Found in words like: ~night, height, right~ 
