@@ -15,3 +15,6 @@ Found in words like: ~night, height, right~
 *** [[https://github.com/deggers/zmk-config/commit/777f3fe28d8ea130ff6325c3e70e22dfbe7ec768][777f3fe]] - Swapped J and SEMI
 Makes some words easier to write for me like:
 ja, je, jo 
+** Future
+- Org-tangle creates keymap - look how freja does this..
+- Convert workflow to emacs 
