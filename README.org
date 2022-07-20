@@ -1,10 +1,10 @@
 * My layout is here
 #+BEGIN_SRC
   ╭────────────────────╮ ╭────────────────────╮ 
-  │  Q   F   C   K   B │ │  '   W   O   U   Z │
+  │  Q   F   C   K   X │ │  '   W   O   U   Z │
   │  R   S   T   H   D │ │  V   N   A   I   L │
-  │  X   Y   G   P   J │ │  -   M   .   ,   ; │
-  ╰───────────╮    SPC │ │  E   ⇧ ╭───────────╯
+  │  Y   B   G   P   J │ │  -   M   .   ,   ; │
+  ╰───────────╮  / SPC │ │  E   ⇧ ╭───────────╯
               ╰────────╯ ╰────────╯     
 #+END_SRC   
 ** What do I particularly like
@@ -15,8 +15,11 @@ Found in words like: ~night, height, right~
 *** [[https://github.com/deggers/zmk-config/commit/777f3fe28d8ea130ff6325c3e70e22dfbe7ec768][777f3fe]] - Swapped J and SEMI
 Makes some words easier to write for me like:
 ja, je, jo 
+*** - Swapped X,Y,B
+Mainly to have B more accessible 
+
 ** Future
 - Org-tangle creates keymap - look how freja does this..
-- Convert workflow to emacs 
+- Convert workflow to emacs s
 - this is just a test and how about now?
 - And one more test
