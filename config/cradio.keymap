@@ -231,20 +231,11 @@
     keymap {
        compatible = "zmk,keymap";
 
-/*                ALPHA LAYER 
-
-  ╭────────────────────╮ ╭────────────────────╮ 
-  │  Q   F   C   K   X │ │  '   W   O   U   Z │
-  │  R   S   T   H   D │ │  V   N   A   I   L │
-  │  Y   B   G   P   ; │ │  -   M   .   ,   J │
-  ╰───────────╮    SPC │ │  E   ⇧ ╭───────────╯
-              ╰────────╯ ╰────────╯            
-*/
        BASE_LAYER {
           bindings = <
 &kp Q           &kp F        &kp C         &kp K               &kp X             &kp APOS  &kp W               &kp O         &kp U        &kp Z
 &hm_gui LGUI R  &gqt LALT S  &gqt LCTRL T  &hm_shift LSHIFT H  &kp D                 &kp V      &hm_shift LSHIFT N  &gqt LCTRL A  &gqt LALT I  &hm_gui LGUI L 
-&kp Y           &kp B      &kp G         &kp P               &kp COMMA             &kp MINUS      &kp M               &kp DOT       &kp J    &kp SEMI
+&kp Y           &kp B      &kp G         &kp P               &kp MINUS             &kp COMMA      &kp M               &kp DOT       &kp J    &kp SEMI
                                       &morph_tab  &lt NAV_LAYER SPACE        &lt NUM_UML_LAYER E  &lt SYM_LAYER LC(BSPC)
                   >;
                 };
