@@ -132,7 +132,7 @@
         combo_delete_word {
             timeout-ms = <50>;
             key-positions = <16 17 18>;
-            bindings = <&kp RA(DEL)>;
+            bindings = <&kp LA(BSPC)>;
         };
 
         combo_backspace {
