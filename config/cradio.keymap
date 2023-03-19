@@ -62,7 +62,7 @@
             key-positions = <8 9 32>;
             bindings = <&bootloader>;
         };
-
+	
         combo_lPar {
             timeout-ms = <50>;
             key-positions = <1 2>;
@@ -75,10 +75,16 @@
             bindings = <&kp LEFT_BRACE>;
         };
 
-        combo_arrow {
+        combo_lBrak {
             timeout-ms = <50>;
             key-positions = <3 4>;
-            bindings = <&lambda_arrow>;
+            bindings = <&kp LBKT>;
+        };
+
+        combo_rBrak {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp RBKT>;
         };
 
         combo_rBrace {
@@ -165,10 +171,10 @@
             bindings = <&kp K_PASTE>;
         };
 	
-        combo_slash {
+        combo_arrow {
             timeout-ms = <50>;
             key-positions = <23 24>;
-            bindings = <&kp SLASH>;
+            bindings = <&lambda_arrow>;
         };
 	
         combo_bleLayer {
