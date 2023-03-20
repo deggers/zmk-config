@@ -131,7 +131,7 @@
 	
 	combo_exclamation {
             timeout-ms = <50>;
-            key-positions = <2 12>;
+            key-positions = <2 13>;
             bindings = <&kp EXCL>;
         };
 
