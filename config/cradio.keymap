@@ -239,7 +239,7 @@
    
     
     behaviors {        
-		hm_shift: homerow_mods {
+		hm_shift: homerow_mods_shift {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOMEROW_MODS_SHIFT";
 			#binding-cells = <2>;
@@ -250,7 +250,7 @@
 			bindings = <&kp>, <&kp>;
 		};
 		
-		hm_gui: homerow_mods {
+		hm_gui: homerow_mods_gui {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOMEROW_MODS_GUI";
 			#binding-cells = <2>;
